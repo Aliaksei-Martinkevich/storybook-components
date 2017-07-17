@@ -1,0 +1,9 @@
+.dropdown-regular-item {
+    padding: 5px;
+    cursor: pointer;
+}
+
+.dropdown-regular-item:hover {
+    background-color: #EEEEEE;
+}
+

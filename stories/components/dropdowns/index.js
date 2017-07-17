@@ -1,11 +1,13 @@
 import ContentStories from './Content';
 import DropdownStories from './Dropdown';
 import HeaderStories from './Header';
-import DropdownItemStories from './DropdownItem';
+import ItemStories from './Item';
+import RegularItemStories from './RegularItem';
 
 export {
   ContentStories,
   DropdownStories,
   HeaderStories,
-  DropdownItemStories,
+  ItemStories,
+  RegularItemStories,
 }
