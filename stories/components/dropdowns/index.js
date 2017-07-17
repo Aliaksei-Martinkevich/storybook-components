@@ -1,9 +1,11 @@
-import DropdownStories from './dropdown';
-import DropdownContentsStories from './dropdownContents';
-import DropdownHeadersStories from './dropdownHeaders';
+import ContentStories from './Content';
+import DropdownStories from './Dropdown';
+import HeaderStories from './Header';
+import DropdownItemStories from './DropdownItem';
 
 export {
+  ContentStories,
   DropdownStories,
-  DropdownContentsStories,
-  DropdownHeadersStories,
+  HeaderStories,
+  DropdownItemStories,
 }

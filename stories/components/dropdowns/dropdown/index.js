@@ -5,9 +5,9 @@ import Components from '../../../../src/components';
 const Dropdown = Components.Dropdowns.Dropdown;
 
 export default storiesOf('Dropdown', module)
-  .add('No content', () => 
+  .add('Text content', () => 
   <Dropdown header='Click me'>
-    <div>Element one</div>
+    <div myid='one'>Element long long long long long long long long long long long long long long long long one</div>
     <div>Element two</div>
     <div>Element three</div>
     <div>Element four</div>

@@ -2,26 +2,26 @@ import React from 'react';
 import { storiesOf } from '@storybook/react';
 import { action } from '@storybook/addon-actions';
 
-import Components from '../../../../../src/components'
-const Header = Components.Dropdowns.DropdownHeaders.Header;
+import Components from '../../../../src/components'
+const Header = Components.Dropdowns.Header;
 const PrimaryButton = Components.Buttons.PrimaryButton;
 
 export default storiesOf('Dropdown Header', module)
   .add('With text', () => 
     <Header
-      onClick={action('Outer click')}>
+      onClick={action('Header clicked')}>
       <span>Some text</span>
     </Header>)
   .add('With children', () => 
-    <Header>
+    <Header onClick={action('Header clicked')}>
       <div>
         Some long long long long long long text
       </div>
     </Header>)
   .add('With button', () => 
-    <Header>
+    <Header onClick={action('Header clicked')}>
       <PrimaryButton 
-        onClick={action('clicked')} 
-        text='😀 😎 👍 💯'
+        onClick={action('Button clicked')} 
+        text='Click me!'
       />
     </Header>);

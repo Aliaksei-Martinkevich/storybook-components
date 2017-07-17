@@ -2,10 +2,8 @@ import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import './index.css';
 
-import Headers from '../DropdownHeaders';
-import Contents from '../DropdownContents';
-const Header = Headers.Header;
-const Content = Contents.Content;
+import Header from '../Header';
+import Content from '../Content';
 
 class Dropdown extends Component { 
 
@@ -17,6 +15,7 @@ class Dropdown extends Component {
     }
 
     this.onClickHandler = this.onClickHandler.bind(this);
+    this.onItemClickHandler = this.onItemClickHandler.bind(this);
   }
 
   onClickHandler() {
@@ -25,6 +24,10 @@ class Dropdown extends Component {
     });
   }
 
+  //TODO
+  onItemClickHandler(itemId) {
+    console.log(itemId);
+  }
 
   render() { 
     return (
@@ -32,7 +35,7 @@ class Dropdown extends Component {
         <Header onClick={ this.onClickHandler }>
           { this.props.header }
         </Header>
-        <Content>
+        <Content onItemClick={this.onItemClickHandler}>
           { this.props.children }
         </Content>
       </div>)
@@ -41,7 +44,6 @@ class Dropdown extends Component {
 
 Dropdown.propTypes = {
   header: PropTypes.element,
-
 }
 
 export default Dropdown;

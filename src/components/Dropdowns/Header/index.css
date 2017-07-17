@@ -1,7 +1,8 @@
 .dropdown-header {
-    margin: auto;
+    margin: 5px;
     position: relative;
     display: inline-flex;
+    cursor: pointer;
 }
 
 /* .collapsed {
