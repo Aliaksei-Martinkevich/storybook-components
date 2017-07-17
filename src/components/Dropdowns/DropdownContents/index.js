@@ -1,5 +1,5 @@
-import DefaultContent from './DefaultContent';
+import Content from './Content';
 
-export {
-  DefaultContent,
+export default {
+  Content,
 }

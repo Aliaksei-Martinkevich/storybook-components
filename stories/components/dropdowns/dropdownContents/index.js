@@ -1,5 +1,5 @@
-import DefaultContentStory from './defaultContent';
+import ContentStory from './Content';
 
 export {
-  DefaultContentStory,
+  ContentStory,
 };

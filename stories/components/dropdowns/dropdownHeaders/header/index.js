@@ -4,7 +4,6 @@ import { action } from '@storybook/addon-actions';
 
 import Components from '../../../../../src/components'
 const Header = Components.Dropdowns.DropdownHeaders.Header;
-const DefaultHeader = Components.Dropdowns.DropdownHeaders.DefaultHeader;
 const PrimaryButton = Components.Buttons.PrimaryButton;
 
 export default storiesOf('Dropdown Header', module)
@@ -15,10 +14,9 @@ export default storiesOf('Dropdown Header', module)
     </Header>)
   .add('With children', () => 
     <Header>
-      <DefaultHeader
-        text='Some long long long long long long text'
-        onClick={action('Inner click')}
-      />
+      <div>
+        Some long long long long long long text
+      </div>
     </Header>)
   .add('With button', () => 
     <Header>
