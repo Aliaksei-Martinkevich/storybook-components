@@ -1,0 +1,16 @@
+/* Color schema settings */
+.transparent-button {
+    --background-regular: transparent;
+    --background-hover: rgba(255, 255, 255, 0.2);
+    --background-selected: rgba(255, 255, 255, 0.15);
+    --background-disabled: transparent;
+    --font-regular: #FFFFFF;
+    --font-disabled: rgba(255, 255, 255, 0.3);
+    --background-processing-start: var(--background-hover);
+    --background-processing-end: var(--background-regular);
+
+    --border-regular: #FFFFFF;
+    --border-disabled: rgba(255, 255, 255, 0.4);
+    --border-width: 1px;
+    --border-type: solid;
+}

@@ -1,0 +1,22 @@
+.dropdown-header {
+    margin: auto;
+    min-width: 70px;
+    position: relative;
+    display: inline-flex;
+    height: 38px;
+    line-height: 38px;
+}
+
+.collapsed {
+    background-image: url('../../../../../public/ico-expand-arrow.png');
+    background-repeat: no-repeat;
+    background-position: calc(100% - 5px) center;
+    background-size: 15px;
+}
+
+.expanded {
+    background-image: url('../../../../../public/ico-collapse-arrow.png');
+    background-repeat: no-repeat;
+    background-position: calc(100% - 5px) center;
+    background-size: 15px;
+}

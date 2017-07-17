@@ -1,0 +1,15 @@
+/* Color schema settings */
+.button {
+    --background-regular: #fff;
+    --background-hover: #fff;
+    --background-selected: #fff;
+    --background-disabled: #eaeaea;
+    --font-regular: #000;
+    --font-disabled: #aaa;
+    --background-processing-start: var(--background-selected);
+    --background-processing-end: var(--background-regular);
+    --border-regular: #000;
+    --border-disabled: #aaa;
+    --border-width: 1px;
+    --border-type: solid;
+}

@@ -1,0 +1,9 @@
+.butten-content {
+    height: 100%;
+    display: flex;
+}
+
+.butten-content:last-child {
+    margin-left: 3%;
+}
+

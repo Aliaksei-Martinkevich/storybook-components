@@ -1,0 +1,30 @@
+/* .dropdown-header {
+    min-width: 70px;
+    position: relative;
+    display: flex;
+    border: 0.5px solid #CCCCCC;
+    color: #CCCCCC;
+    height: 38px;
+}
+
+.dropdown-header .dropdown-header-text {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: clip;
+    text-overflow: ellipsis;
+    margin: auto 20px auto 7px;
+}
+
+.collapsed {
+    background-image: url('../../../../../public/ico-expand-arrow.png');
+    background-repeat: no-repeat;
+    background-position: calc(100% - 10px) center;
+    background-size: 15px;
+}
+
+.expanded {
+    background-image: url('../../../../../public/ico-collapse-arrow.png');
+    background-repeat: no-repeat;
+    background-position: calc(100% - 10px) center;
+    background-size: 15px;
+} */

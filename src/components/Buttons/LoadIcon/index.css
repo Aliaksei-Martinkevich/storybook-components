@@ -1,0 +1,13 @@
+@keyframes spin {
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+ 
+.load-icon {
+    height: 18px;
+    margin: auto;
+    margin-right: 3%;
+    animation: spin 1.5s steps(12, start) infinite;
+}

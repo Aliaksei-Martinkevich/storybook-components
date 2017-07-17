@@ -1,0 +1,9 @@
+div .icon-black {
+    padding: 25px;
+    background-color: white;
+}
+
+div .icon-white {
+    padding: 25px;
+    background-color: black;
+}

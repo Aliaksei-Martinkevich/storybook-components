@@ -1,0 +1,8 @@
+.button-label {
+    margin: auto;
+    overflow: hidden;
+    text-overflow: clip;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    text-align: left;
+}
