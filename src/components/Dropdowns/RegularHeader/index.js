@@ -13,10 +13,8 @@ const RegularHeader = ({ text, className = ''}) => {
 };
 
 RegularHeader.propTypes = {
-  onClick: PropTypes.func,
   text: PropTypes.string,
   className: PropTypes.string,
-  remark: PropTypes.string,
 };
 
 export default RegularHeader;

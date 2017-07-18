@@ -32,6 +32,7 @@ RegularItem.propTypes = {
   text: PropTypes.string,
   className: PropTypes.string,
   remark: PropTypes.string,
+  iconUri: PropTypes.string,
 };
 
 export default RegularItem;

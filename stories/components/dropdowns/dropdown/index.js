@@ -6,7 +6,7 @@ import Components from '../../../../src/components';
 const Dropdown = Components.Dropdowns.Dropdown;
 const RegularItem = Components.Dropdowns.RegularItem;
 const RegularHeader = Components.Dropdowns.RegularHeader;
-const ButtonHeader = Components.Dropdowns.DropdownButtonHeader;
+const ButtonHeader = Components.Dropdowns.ButtonHeader;
 
 export default storiesOf('Dropdown', module)
   .add('With regular items', () =>

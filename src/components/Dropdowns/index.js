@@ -5,7 +5,7 @@ import Item from './Item';
 import RegularItem from './RegularItem';
 import Remark from './Remark';
 import RegularHeader from './RegularHeader';
-import DropdownButtonHeader from './DropdownButtonHeader';
+import ButtonHeader from './ButtonHeader';
 
 export default {
   Header,
@@ -15,5 +15,5 @@ export default {
   RegularItem,
   Remark,
   RegularHeader,
-  DropdownButtonHeader,
+  ButtonHeader,
 };

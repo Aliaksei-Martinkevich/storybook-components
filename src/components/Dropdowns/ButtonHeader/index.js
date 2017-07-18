@@ -14,7 +14,7 @@ DropdownButton.defaultProps = {
 
 DropdownButton.propTypes = {
   className: PropTypes.string,
-  onClick: PropTypes.func,
+  text: PropTypes.string,
 }
 
 export default DropdownButton;
