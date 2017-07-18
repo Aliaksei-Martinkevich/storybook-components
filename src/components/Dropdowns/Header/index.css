@@ -1,20 +1,5 @@
 .dropdown-header {
-    margin: 5px;
     position: relative;
     display: inline-flex;
     cursor: pointer;
 }
-
-/* .collapsed {
-    background-image: url('../../../../../public/ico-expand-arrow.png');
-    background-repeat: no-repeat;
-    background-position: calc(100% - 5px) center;
-    background-size: 15px;
-}
-
-.expanded {
-    background-image: url('../../../../../public/ico-collapse-arrow.png');
-    background-repeat: no-repeat;
-    background-position: calc(100% - 5px) center;
-    background-size: 15px;
-} */

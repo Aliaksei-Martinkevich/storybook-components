@@ -32,7 +32,7 @@ class Dropdown extends Component {
   render() { 
     return (
       <div className={`dropdown ${this.state.isExpanded ? 'expanded' : 'collapsed'}`}>
-        <Header onClick={ this.onClickHandler }>
+        <Header onClick={ this.onClickHandler } className={`${this.state.isExpanded ? 'expanded' : 'collapsed'}`}>
           { this.props.header }
         </Header>
         <Content onItemClick={this.onItemClickHandler}>

@@ -19,6 +19,7 @@ const RegularItem = ({ onClick, text, className = '', remark = '', iconUri = '' 
     onClick={onClick}
     className={`dropdown-regular-item ${className}`}
     style={iconUri ? iconImageStyle : undefined}
+    title={text}
     >
       {text}
     { remark ? <Remark text={remark}/> : '' }
