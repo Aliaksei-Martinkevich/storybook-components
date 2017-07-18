@@ -6,6 +6,7 @@ import RegularItem from './RegularItem';
 import Remark from './Remark';
 import RegularHeader from './RegularHeader';
 import ButtonHeader from './ButtonHeader';
+import InlineHeader from './InlineHeader';
 
 export default {
   Header,
@@ -16,4 +17,5 @@ export default {
   Remark,
   RegularHeader,
   ButtonHeader,
+  InlineHeader,
 };
