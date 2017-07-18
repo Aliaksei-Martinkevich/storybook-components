@@ -1,9 +1,9 @@
-.butten-content {
+.button-content {
     height: 100%;
     display: flex;
 }
 
-.butten-content:last-child {
+.button-content:last-child {
     margin-left: 3%;
 }
 

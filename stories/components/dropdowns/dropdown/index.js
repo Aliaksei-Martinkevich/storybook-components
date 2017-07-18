@@ -6,6 +6,7 @@ import Components from '../../../../src/components';
 const Dropdown = Components.Dropdowns.Dropdown;
 const RegularItem = Components.Dropdowns.RegularItem;
 const RegularHeader = Components.Dropdowns.RegularHeader;
+const ButtonHeader = Components.Dropdowns.DropdownButtonHeader;
 
 export default storiesOf('Dropdown', module)
   .add('With regular items', () =>
@@ -33,7 +34,7 @@ export default storiesOf('Dropdown', module)
         iconUri='https://material.io/guidelines/static/spec/images/callouts/default.svg' />
     </Dropdown>)
   .add('With regular header', () =>
-    <Dropdown header={<RegularHeader text='Regular header'/>}>
+    <Dropdown header={<RegularHeader text='Regular header' />}>
       <RegularItem
         onClick={action('Item clicked')}
         text='Some text' />
@@ -55,4 +56,28 @@ export default storiesOf('Dropdown', module)
         onClick={action('Item clicked')}
         text='Some text with icon'
         iconUri='https://material.io/guidelines/static/spec/images/callouts/default.svg' />
-    </Dropdown>);
+    </Dropdown>)
+  .add('With button header', () =>
+    <Dropdown header={<ButtonHeader text='Regular header' />}>
+      <RegularItem
+        onClick={action('Item clicked')}
+        text='Some text' />
+      <RegularItem
+        onClick={action('Item clicked')}
+        text='Some long long long long long long long long long text' />
+      <RegularItem
+        onClick={action('Item clicked')}
+        text='Some text with remark'
+        remark='Some remark' />
+      <RegularItem
+        onClick={action('Item clicked')}
+        text='Some text with remark'
+        remark='Some long long long long long long long long long long long long two lines remark' />
+      <RegularItem
+        onClick={action('Item clicked')}
+        text='👁 Some text with utf icon' />
+      <RegularItem
+        onClick={action('Item clicked')}
+        text='Some text with icon'
+        iconUri='https://material.io/guidelines/static/spec/images/callouts/default.svg' />
+    </Dropdown>)

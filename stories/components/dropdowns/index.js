@@ -4,6 +4,7 @@ import HeaderStories from './Header';
 import ItemStories from './Item';
 import RegularItemStories from './RegularItem';
 import RegularHeaderStories from './RegularHeader';
+import DropdownButtonHeader from './DropdownButtonHeader';
 
 export {
   ContentStories,
@@ -11,5 +12,6 @@ export {
   HeaderStories,
   ItemStories,
   RegularItemStories,
-  RegularHeaderStories
+  RegularHeaderStories,
+  DropdownButtonHeader,
 }

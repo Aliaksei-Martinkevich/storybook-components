@@ -5,7 +5,7 @@ import LoadIcon from '../LoadIcon';
 import ButtonLabel from '../ButtonLabel';
 
 const ButtonContent = ({text, iconUri}) => (
-  <div className={'butten-content'}>
+  <div className={'button-content'}>
     { iconUri
       ? <LoadIcon iconUri={iconUri} />
       : null
