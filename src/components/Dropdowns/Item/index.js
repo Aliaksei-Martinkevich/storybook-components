@@ -1,9 +1,9 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-const Item = ({ onClick, itemId, children }) => {
+const Item = ({ onClick, children}) => {
   return (
-    <div onClick={() => onClick(itemId)}>
+    <div onClick={onClick}>
       {children}
     </div>
   )
@@ -11,7 +11,6 @@ const Item = ({ onClick, itemId, children }) => {
 
 Item.propTypes = {
   onClick: PropTypes.func,
-  itemId: PropTypes.any,
 };
 
 export default Item;

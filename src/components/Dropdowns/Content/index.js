@@ -4,24 +4,32 @@ import './index.css';
 
 import Item from '../Item';
 
-const Content = ({className = '', onItemClick, children }) => {
-  const onItemClickHandler = (itemId) => {
-    onItemClick(itemId);
+const Content = ({ className = '', onItemClick, children }) => {
+  const onItemClickHandler = (key) => {
+    onItemClick(key);
   };
 
   return (
     <div className={`dropdown-content ${className}`}>
-        { Array.isArray(children) 
-        ? Array.prototype.map.call(children, (el, id) => 
-          <Item onClick={onItemClickHandler} itemId={el.props.itemId || id}>{el}</Item>)
-        : <Item onClick={onItemClickHandler} itemId={children.props.itemId || 0}>{children}</Item> }
+      {Array.isArray(children)
+        ? Array.prototype.map.call(children, (el, id) =>
+          <Item
+            onClick={onItemClickHandler.bind(this, el.key || id.toString())}
+            key={el.key || id}>
+            {el}
+          </Item>)
+        : <Item
+          onClick={onItemClickHandler.bind(this, children.key || '0')}
+          key={children.key || '0'}>
+          {children}
+        </Item>}
     </div>
   )
 };
 
 Content.propTypes = {
   className: PropTypes.string,
-  onItemClick: PropTypes.func, 
+  onItemClick: PropTypes.func,
 };
 
 export default Content;

@@ -24,9 +24,10 @@ class Dropdown extends Component {
     });
   }
 
-  //TODO
   onItemClickHandler(itemId) {
-    console.log(itemId);
+    if (typeof (this.props.onItemClick) === 'function') {
+      this.props.onItemClick(itemId);
+    }
   }
 
   render() { 
