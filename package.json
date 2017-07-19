@@ -27,7 +27,7 @@
   },
   "scripts": {
     "start": "webpack-dev-server --config webpack.config.dev.js --hot -w --colors --port 3000 --host \"localhost\" --open",
-    "build": "webpack --config webpack.config.dev.js  --progress --color --display-error-details",
+    "build": "webpack --config webpack.config.prod.js  --progress --color --display-error-details",
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook"
   },
