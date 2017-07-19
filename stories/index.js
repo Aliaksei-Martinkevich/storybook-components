@@ -1,1 +1,3 @@
-import Stories from './components/';
+
+
+import Stories from './components';
