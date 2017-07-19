@@ -23,11 +23,12 @@
     "sass-loader": "^6.0.6",
     "style-loader": "^0.18.2",
     "url-loader": "^0.5.9",
-    "webpack-dev-server": "^2.5.1"
+    "webpack-dev-server": "^2.5.1",
+    "webpack-merge": "^4.1.0"
   },
   "scripts": {
-    "start": "webpack-dev-server --config webpack.config.dev.js --hot -w --colors --port 3000 --host \"localhost\" --open",
-    "build": "webpack --config webpack.config.prod.js  --progress --color --display-error-details",
+    "start": "webpack-dev-server --config \"./config/webpack/webpack.config.dev.js\" --hot -w --colors --port 3000 --host \"localhost\" --open",
+    "build": "webpack --config \"./config/webpack/webpack.config.prod.js\"  --progress --color --display-error-details",
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook"
   },
