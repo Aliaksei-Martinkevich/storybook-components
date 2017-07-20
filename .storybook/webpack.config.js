@@ -17,6 +17,8 @@ module.exports = {
     strictExportPresence: true,
     rules: [{
         exclude: [
+          /\.scss/, 
+          /\.sass/, 
           /\.html$/,
           /\.(js|jsx)$/,
           /\.css$/,
@@ -31,6 +33,11 @@ module.exports = {
           name: 'static/media/[name].[hash:8].[ext]',
         },
       },
+      { 
+        test: /\.s[ca]ss$/, 
+        include:[ path.resolve(__dirname, '../src'), path.resolve(__dirname, '../stories') ],
+        loaders: ["style-loader", "css-loader", "sass-loader"] 
+      }, 
       {
         test: [/\.bmp$/, /\.gif$/, /\.jpe?g$/, /\.png$/],
         loader: require.resolve('url-loader'),

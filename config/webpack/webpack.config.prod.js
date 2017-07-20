@@ -2,15 +2,13 @@ const autoprefixer = require('autoprefixer');
 const path = require('path');
 const webpack = require('webpack');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
-const eslintFormatter = require('eslint-formatter-pretty');
-const CaseSensitivePathsPlugin = require('case-sensitive-paths-webpack-plugin');
 
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
 
 const baseConfig = require('./webpack.config.base');
 const merge = require('webpack-merge');
 
-module.exports = merge.smart(baseConfig, {
+module.exports = merge(baseConfig, {
   bail: true,
 
   entry: path.resolve(__dirname, '../../src'),
@@ -36,6 +34,51 @@ module.exports = merge.smart(baseConfig, {
           compact: true,
         },
       },
+      { 
+        test: /\.s[ac]ss$/, 
+        include: path.resolve(__dirname, '../../src'),
+        loader: ExtractTextPlugin.extract(
+          Object.assign({
+              fallback: require.resolve('style-loader'),
+              use: [
+                {
+                  loader: require.resolve('css-loader'),
+                  options: {
+                    importLoaders: 1,
+                    minimize: true,
+                    sourceMap: true,
+                  },
+                },
+                {
+                  loader: require.resolve('sass-loader'),
+                  options: {
+                    importLoaders: 1,
+                    minimize: true,
+                    sourceMap: true,
+                  },
+                },
+                {
+                  loader: require.resolve('postcss-loader'),
+                  options: {
+                    ident: 'postcss',
+                    plugins: () => [
+                      require('postcss-flexbugs-fixes'),
+                      autoprefixer({
+                        browsers: [
+                          '>1%',
+                          'last 4 versions',
+                          'Firefox ESR',
+                          'not ie < 9',
+                        ],
+                        flexbox: 'no-2009',
+                      }),
+                    ],
+                  },
+                },
+              ],
+          })
+        ),
+      }, 
       {
         test: /\.css$/,
         loader: ExtractTextPlugin.extract(

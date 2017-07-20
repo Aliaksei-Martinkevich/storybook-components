@@ -31,6 +31,8 @@ module.exports = {
       },
       {
         exclude: [
+          /\.scss/, 
+          /\.sass/, 
           /\.html$/,
           /\.(js|jsx)$/,
           /\.css$/,

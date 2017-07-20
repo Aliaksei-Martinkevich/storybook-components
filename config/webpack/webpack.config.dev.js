@@ -30,6 +30,16 @@ module.exports = merge(baseConfig, {
                 include: path.resolve(__dirname, '../../src'),
                 loader: require.resolve('babel-loader'),
             },
+            { 
+                test: /\.sass$/, 
+                include: path.resolve(__dirname, '../../src'),
+                loaders: ["style-loader", "css-loader", "sass-loader"] 
+            }, 
+            { 
+                test: /\.scss$/, 
+                include: path.resolve(__dirname, '../../src'),
+                loaders: ["style-loader", "css-loader", "sass-loader"] 
+            }, 
             {
                 test: /\.css$/,
                 use: [
