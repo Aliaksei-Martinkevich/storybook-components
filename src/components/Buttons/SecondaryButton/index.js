@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 
 import Button from '../Button';
 import settings from './settings.scss';
-import icon from '../../../../public/circle-loading-black.png';
+import icon from '../../../../assets/icons/circle-loading-black.png';
 
 const PrimaryButton = ({text, onClick, className='', disabled = false, processing = false}) => {
   

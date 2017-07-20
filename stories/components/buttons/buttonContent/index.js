@@ -2,7 +2,7 @@ import React from 'react';
 import { storiesOf } from '@storybook/react';
 
 import ButtonContent from '../../../../src/components/Buttons/ButtonContent';
-import blackIcon from '../../../../public/circle-loading-black.png';
+import blackIcon from '../../../../assets/icons/circle-loading-black.png';
 
 export default storiesOf('ButtonContent', module)
   .add('Short text', () => <ButtonContent text='sample text' />)

@@ -3,8 +3,8 @@ import { storiesOf } from '@storybook/react';
 
 import './background-div.scss';
 import LoadIcon from '../../../../src/components/Buttons/LoadIcon';
-import whiteIcon from '../../../../public/circle-loading-white.png';
-import blackIcon from '../../../../public/circle-loading-black.png';
+import whiteIcon from '../../../../assets/icons/circle-loading-white.png';
+import blackIcon from '../../../../assets/icons/circle-loading-black.png';
 
 export default storiesOf('LoadIcon', module)
   .add('White', () => <div className='icon-white'><LoadIcon iconUri={whiteIcon} /></div>)

@@ -3,31 +3,34 @@ import { storiesOf } from '@storybook/react';
 import { action } from '@storybook/addon-actions';
 
 import Components from '../../../../src/components';
-import icon from '../../../../public/ico-expand-arrow.png';
 
 const RegularItem = Components.Dropdowns.RegularItem;
 
 export default storiesOf('Dropdown regular Item', module)
   .add('With text', () =>
-    <RegularItem
+    (<RegularItem
       onClick={action('Item clicked')}
-      text='Some text' />)
+      text="Some text"
+    />))
   .add('With long text', () =>
-    <RegularItem
+    (<RegularItem
       onClick={action('Item clicked')}
-      text='Some long long long long long long text' />)
+      text="Some long long long long long long text"
+    />))
   .add('With remark', () =>
-    <RegularItem
+    (<RegularItem
       onClick={action('Item clicked')}
-      text='Some text'
-      remark='Some remark' />)
+      text="Some text"
+      remark="Some remark"
+    />))
   .add('With utf icon', () =>
-    <RegularItem
+    (<RegularItem
       onClick={action('Item clicked')}
-      text='👁 Some text' />)
+      text="👁 Some text"
+    />))
   .add('With icon', () =>
-    <RegularItem
+    (<RegularItem
       onClick={action('Item clicked')}
-      text='Some text'
-      iconUri='https://material.io/guidelines/static/spec/images/callouts/default.svg'
-    />);
+      text="Some text"
+      iconUri="https://material.io/guidelines/static/spec/images/callouts/default.svg"
+    />));

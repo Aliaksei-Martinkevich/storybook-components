@@ -5,14 +5,14 @@
 }
 
 .collapsed .dropdown-button-header {
-    background-image: url('../../../../public/ico-expand-arrow.png');
+    background-image: url('../../../../assets/icons/ico-expand-arrow.png');
     background-repeat: no-repeat;
     background-position: calc(100% - 20px) center;
     background-size: 15px;
 }
 
 .expanded .dropdown-button-header {
-    background-image: url('../../../../public/ico-collapse-arrow.png');
+    background-image: url('../../../../assets/icons/ico-collapse-arrow.png');
     background-repeat: no-repeat;
     background-position: calc(100% - 20px) center;
     background-size: 15px;

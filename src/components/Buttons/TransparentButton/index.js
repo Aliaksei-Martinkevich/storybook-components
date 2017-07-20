@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 
 import Button from '../Button';
 import settings from './settings.scss';
-import icon from '../../../../public/circle-loading-white.png';
+import icon from '../../../../assets/icons/circle-loading-white.png';
 
 const TransparentButton = ({text, onClick, className='', disabled = false, processing = false}) => {
   

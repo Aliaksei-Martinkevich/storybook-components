@@ -16,7 +16,7 @@ const Button = ({
   className = '',
 }) => {
   let settings = defaultSettings;
-  if (style) {
+  if (style) {  
     settings = style;
   }
   
