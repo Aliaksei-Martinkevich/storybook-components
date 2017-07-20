@@ -3,7 +3,7 @@ import { storiesOf } from '@storybook/react';
 import { action } from '@storybook/addon-actions';
 
 import PrimaryButton from '../../../../src/components/Buttons/PrimaryButton';
-import './overrided.css';
+import './overrided.scss';
 
 
 export default storiesOf('PrimaryButton', module)

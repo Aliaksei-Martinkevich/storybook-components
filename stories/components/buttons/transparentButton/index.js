@@ -3,7 +3,7 @@ import { storiesOf } from '@storybook/react';
 import { action } from '@storybook/addon-actions';
 
 import TransparentButton from '../../../../src/components/Buttons/TransparentButton';
-import './background.css';
+import './background.scss';
 
 export default storiesOf('TransparentButton', module)
   .add('with text', () => 

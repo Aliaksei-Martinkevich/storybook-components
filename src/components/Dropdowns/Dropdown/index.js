@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
-import './index.css';
+import './index.scss';
 
 import Header from '../Header';
 import Content from '../Content';

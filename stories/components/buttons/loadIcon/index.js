@@ -1,7 +1,7 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
 
-import './background-div.css';
+import './background-div.scss';
 import LoadIcon from '../../../../src/components/Buttons/LoadIcon';
 import whiteIcon from '../../../../public/circle-loading-white.png';
 import blackIcon from '../../../../public/circle-loading-black.png';

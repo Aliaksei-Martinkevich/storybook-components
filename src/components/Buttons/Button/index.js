@@ -1,8 +1,8 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-import './index.css';
-import defaultSettings from './settings.css';
+import './index.scss';
+import defaultSettings from './settings.scss';
 
 import ButtonContent from '../ButtonContent';
 

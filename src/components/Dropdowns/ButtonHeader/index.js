@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import './index.css';
+import './index.scss';
 import Buttons from '../../Buttons';
 const PrimaryButton = Buttons.PrimaryButton;
 
