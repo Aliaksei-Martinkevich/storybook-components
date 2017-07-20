@@ -43,6 +43,7 @@ class Dropdown extends Component {
 
 Dropdown.propTypes = {
   header: PropTypes.element,
+  onItemClick: PropTypes.func,
 };
 
 export default Dropdown;

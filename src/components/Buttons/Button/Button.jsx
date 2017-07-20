@@ -1,5 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import classNames from 'classnames';
 
 import './Button.scss';
 import defaultSettings from './settings.scss';
@@ -19,11 +20,14 @@ const Button = ({
   if (style) {
     settings = style;
   }
-
   return (
     <button
       style={settings}
-      className={`button ${processing ? 'processing ' : ''} ${className}`}
+      className={classNames({
+        button: true,
+        processing,
+        className: className !== '',
+      })}
       onClick={onClick}
       disabled={disabled}
       title={text}
@@ -39,6 +43,8 @@ Button.propTypes = {
   disabled: PropTypes.bool,
   processing: PropTypes.bool,
   iconUri: PropTypes.any,
+  style: PropTypes.style,
+  className: PropTypes.string,
 };
 
 export default Button;
