@@ -2,7 +2,7 @@ const autoprefixer = require('autoprefixer');
 const path = require('path');
 const webpack = require('webpack');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
-
+const postcssFlexbugsFixes = require('postcss-flexbugs-fixes');
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
 
 const baseConfig = require('./webpack.config.base');
@@ -27,65 +27,30 @@ module.exports = merge(baseConfig, {
   module: {
 
     rules: [{
-        test: /\.(js|jsx)$/,
-        include: path.resolve(__dirname, '../../src'),
-        loader: require.resolve('babel-loader'),
-        options: {
-          compact: true,
-        },
+      test: /\.(js|jsx)$/,
+      include: path.resolve(__dirname, '../../src'),
+      loader: require.resolve('babel-loader'),
+      options: {
+        compact: true,
       },
-      { 
-        test: /\.s[ac]ss$/, 
-        include: path.resolve(__dirname, '../../src'),
-        loader: ExtractTextPlugin.extract(
-          Object.assign({
-              fallback: require.resolve('style-loader'),
-              use: [
-                {
-                  loader: require.resolve('css-loader'),
-                  options: {
-                    importLoaders: 1,
-                    minimize: true,
-                    sourceMap: true,
-                  },
-                },
-                {
-                  loader: require.resolve('sass-loader'),
-                  options: {
-                    importLoaders: 1,
-                    minimize: true,
-                    sourceMap: true,
-                  },
-                },
-                {
-                  loader: require.resolve('postcss-loader'),
-                  options: {
-                    ident: 'postcss',
-                    plugins: () => [
-                      require('postcss-flexbugs-fixes'),
-                      autoprefixer({
-                        browsers: [
-                          '>1%',
-                          'last 4 versions',
-                          'Firefox ESR',
-                          'not ie < 9',
-                        ],
-                        flexbox: 'no-2009',
-                      }),
-                    ],
-                  },
-                },
-              ],
-          })
-        ),
-      }, 
-      {
-        test: /\.css$/,
-        loader: ExtractTextPlugin.extract(
+    },
+    {
+      test: /\.s[ac]ss$/,
+      include: path.resolve(__dirname, '../../src'),
+      loader: ExtractTextPlugin.extract(
           Object.assign({
             fallback: require.resolve('style-loader'),
-            use: [{
+            use: [
+              {
                 loader: require.resolve('css-loader'),
+                options: {
+                  importLoaders: 1,
+                  minimize: true,
+                  sourceMap: true,
+                },
+              },
+              {
+                loader: require.resolve('sass-loader'),
                 options: {
                   importLoaders: 1,
                   minimize: true,
@@ -97,7 +62,7 @@ module.exports = merge(baseConfig, {
                 options: {
                   ident: 'postcss',
                   plugins: () => [
-                    require('postcss-flexbugs-fixes'),
+                    postcssFlexbugsFixes,
                     autoprefixer({
                       browsers: [
                         '>1%',
@@ -111,9 +76,44 @@ module.exports = merge(baseConfig, {
                 },
               },
             ],
-          })
+          }),
         ),
-      },
+    },
+    {
+      test: /\.css$/,
+      loader: ExtractTextPlugin.extract(
+          Object.assign({
+            fallback: require.resolve('style-loader'),
+            use: [{
+              loader: require.resolve('css-loader'),
+              options: {
+                importLoaders: 1,
+                minimize: true,
+                sourceMap: true,
+              },
+            },
+            {
+              loader: require.resolve('postcss-loader'),
+              options: {
+                ident: 'postcss',
+                plugins: () => [
+                  postcssFlexbugsFixes,
+                  autoprefixer({
+                    browsers: [
+                      '>1%',
+                      'last 4 versions',
+                      'Firefox ESR',
+                      'not ie < 9',
+                    ],
+                    flexbox: 'no-2009',
+                  }),
+                ],
+              },
+            },
+            ],
+          }),
+        ),
+    },
     ],
   },
 

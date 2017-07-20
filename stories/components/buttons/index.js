@@ -1,10 +1,10 @@
-import loadIconStories from './loadIcon';
-import buttonLabelStories from './buttonLabel';
-import buttonContentStories from './buttonContent';
-import buttonStories from './button';
-import primaryButtonStories from './primaryButton';
-import secondaryButtonStories from './secondaryButton';
-import transparentButtonStories from './transparentButton';
+import loadIconStories from './loadIcon/index.jsx';
+import buttonLabelStories from './buttonLabel/index.jsx';
+import buttonContentStories from './buttonContent/index.jsx';
+import buttonStories from './button/index.jsx';
+import primaryButtonStories from './primaryButton/index.jsx';
+import secondaryButtonStories from './secondaryButton/index.jsx';
+import transparentButtonStories from './transparentButton/index.jsx';
 
 export default {
   loadIconStories,
