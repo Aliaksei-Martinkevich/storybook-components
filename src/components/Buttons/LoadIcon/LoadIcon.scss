@@ -1,13 +1,6 @@
-@keyframes spin {
-    to {
-        transform: rotate(360deg);
-    }
-}
+@import "./spin.scss";
 
- 
 .load-icon {
-    height: 18px;
-    margin: auto;
-    margin-right: 3%;
+    /* 12 is count of dashes in icon */
     animation: spin 1.5s steps(12, start) infinite;
 }
