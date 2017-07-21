@@ -1,7 +1,7 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
 
-import ButtonLabel from '../../../../src/components/Buttons/ButtonLabel/ButtonLabel.jsx';
+import ButtonLabel from '../../../../src/components/Buttons/Button/ButtonContent/ButtonLabel/ButtonLabel.jsx';
 import './index.scss';
 
 export default storiesOf('ButtonLabel', module)

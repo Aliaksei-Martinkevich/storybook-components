@@ -1,7 +1,7 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
 
-import ButtonContent from '../../../../src/components/Buttons/ButtonContent/ButtonContex.jsx';
+import ButtonContent from '../../../../src/components/Buttons/Button/ButtonContent/ButtonContex.jsx';
 import blackIcon from '../../../../assets/icons/circle-loading-black.png';
 
 export default storiesOf('ButtonContent', module)

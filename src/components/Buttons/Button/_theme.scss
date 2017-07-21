@@ -1,24 +1,10 @@
-.button {
-    color: $font-regular;
-    background-color: $background-regular;
-    border: $border-width $border-type $border-regular;
+@mixin colors($font_color, $background_color, $border_color) {
+    color: $font_color;
+    background-color: $background_color;
+    border-color: $border_color;
 }
 
-.button:hover {
-    background-color: $background-hover;
-}
-
-.button:active {
-    background-color: $background-selected;
-}
-
-.button:disabled {
-    background-color: $background-disabled;
-    color: $font-disabled;
-    border-color: $border-disabled;
-}
-
-.button_processing {
-    background: $background-processing-end;
-    background: linear-gradient(to right, $background-processing-start 0%, $background-processing-start 50%, $background-processing-end 50%, $background-processing-end 100%);
+@mixin two-colors-gradient($start_color, $end_color, $percent:50%) {
+    background: $end_color;
+    background: linear-gradient(to right, $start_color 0%, $start_color 50%, $end_color 50%, $end_color 100%);
 }

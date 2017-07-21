@@ -3,7 +3,7 @@ import { storiesOf } from '@storybook/react';
 import { action } from '@storybook/addon-actions';
 
 import Button from '../../../../src/components/Buttons/Button/Button.jsx';
-import blackIcon from '../../../../assets/icons/circle-loading-black.png';
+import blackIcon from '../../../../assets/icons/svg/loading-circle-dashes-black.svg';
 
 export default storiesOf('Button', module)
   .add('with text', () => (<Button

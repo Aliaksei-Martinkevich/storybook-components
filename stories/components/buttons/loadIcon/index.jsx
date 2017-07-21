@@ -2,7 +2,7 @@ import React from 'react';
 import { storiesOf } from '@storybook/react';
 
 import './background-div.scss';
-import LoadIcon from '../../../../src/components/Buttons/LoadIcon/LoadIcon.jsx';
+import LoadIcon from '../../../../src/components/Buttons/Button/ButtonContent/LoadIcon/LoadIcon.jsx';
 import svgBlackIcon from '../../../../assets/icons/svg/loading-circle-dashes-black.svg';
 import svgWhiteIcon from '../../../../assets/icons/svg/loading-circle-dashes-white.svg';
 import whiteIcon from '../../../../assets/icons/circle-loading-white.png';

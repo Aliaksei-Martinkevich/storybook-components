@@ -1,0 +1,28 @@
+@import '../../../../assets/scsss/colors';
+@import 'theme';
+
+$background-regular: transparent;
+$background-hover: rgba($white, 0.2);
+$background-selected: rgba($white, 0.15);
+$background-disabled: transparent;
+$font-regular: $white;
+$font-disabled: rgba($white, 0.3);
+$border-regular: $white;
+$border-disabled: rgba($white, 0.4);
+$border-width: 1px;
+$border-type: solid;
+
+.button_theme-transparent {
+    border-width: $border-width;
+    border-style: $border-type;
+
+    @include colors($font-regular, $background-regular, $border-regular);
+
+    &:hover { background-color: $background-hover; }
+
+    &:active { background-color: $background-selected; }
+
+    &:disabled { @include colors($font-disabled, $background-disabled, $border-disabled); }
+
+    &.button_processing { @include two-colors-gradient($background-hover, $background-regular); }
+}

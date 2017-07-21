@@ -3,7 +3,7 @@ import { storiesOf } from '@storybook/react';
 import { action } from '@storybook/addon-actions';
 
 import Header from '../../../../src/components/Dropdowns/Header/Header.jsx';
-import PrimaryButton from '../../../../src/components/Buttons/PrimaryButton/PrimaryButton.jsx';
+import Button from '../../../../src/components/Buttons/Button/Button.jsx';
 
 export default storiesOf('Dropdown Header', module)
   .add('With text', () =>
@@ -20,8 +20,9 @@ export default storiesOf('Dropdown Header', module)
     </Header>))
   .add('With button', () =>
     (<Header onClick={action('Header clicked')}>
-      <PrimaryButton
+      <Button
         onClick={action('Button clicked')}
         text="Click me!"
+        theme="primary"
       />
     </Header>));

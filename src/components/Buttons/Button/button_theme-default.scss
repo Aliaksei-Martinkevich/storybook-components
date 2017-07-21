@@ -1,0 +1,28 @@
+@import '../../../../assets/scsss/colors';
+@import 'theme';
+
+$background-regular: $white;
+$background-hover: $white;
+$background-selected: $white;
+$background-disabled: $light_gray;
+$font-regular: $text;
+$font-disabled: $gray_secondary_btn_pressed;
+$border-regular: $black;
+$border-disabled: $gray_secondary_btn_pressed;
+$border-width: 1px;
+$border-type: solid;
+
+.button_theme-default {
+    border-width: $border-width;
+    border-style: $border-type;
+
+    @include colors($font-regular, $background-regular, $border-regular);
+
+    &:hover { background-color: $background-hover; }
+
+    &:active { background-color: $background-selected; }
+
+    &:disabled { @include colors($font-disabled, $background-disabled, $border-disabled); }
+
+    &.button_processing { @include two-colors-gradient($background-selected, $background-regular); }
+}
