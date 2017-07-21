@@ -1,48 +1,18 @@
-
 .button {
     box-sizing: border-box;
     font-size: 14px;
     font-family: 'Oxygen Regular';
     line-height: 18px;
-    min-width: 150px;
-    min-height: 25px;
-    max-width: 250px;
-    padding-inline-start: 25px;
-    padding-inline-end: 25px;
-    height: 42px;
-
-    color: var(--font-regular);
-    background-color: var(--background-regular);
+    height: 42px; 
     border-radius: 22px;
-    border: var(--border-width) var(--border-type) var(--border-regular);
+    padding-right: 44px;
+    padding-left: 44px;
 }
 
-.button:hover {
-    background-color: var(--background-hover);
-}
-
-.button:active {
-    background-color: var(--background-selected);
-}
-
-/* Hide chrome blue border */
 .button:focus {
     outline: 0;
 }
 
-/* Hide mozilla dotted border */
 .button::-moz-focus-inner {
     border: 0;
 }
-
-.button:disabled {
-    background-color: var(--background-disabled);
-    color: var(--font-disabled);
-    border-color: var(--border-disabled);
-}
-
-.button.processing {
-    background: var(--background-processing-end);
-    background: linear-gradient(to right, var(--background-processing-start) 0%, var(--background-processing-start) 50%, var(--background-processing-end) 50%, var(--background-processing-end) 100%);
-}
-

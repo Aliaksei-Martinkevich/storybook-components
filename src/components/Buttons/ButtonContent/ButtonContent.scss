@@ -1,9 +1,15 @@
 .button-content {
-    height: 100%;
     display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row nowrap;
 }
 
-.button-content:last-child {
-    margin-left: 3%;
+.button-content__icon {
+    flex: none;
+    height: 17px;
+    margin-right: 10px;
 }
 
+.butten-content__label {
+}

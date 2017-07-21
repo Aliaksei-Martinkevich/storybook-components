@@ -7,10 +7,10 @@ import ButtonLabel from '../ButtonLabel/ButtonLabel.jsx';
 const ButtonContent = ({ text, iconUri = '' }) => (
   <div className="button-content">
     { iconUri
-      ? <LoadIcon iconUri={iconUri} />
+      ? <LoadIcon iconUri={iconUri} className="button-content__icon" />
       : null
     }
-    <ButtonLabel text={text} />
+    <ButtonLabel text={text} className="butten-content__label" />
   </div>
 );
 

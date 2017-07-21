@@ -3,12 +3,9 @@ import PropTypes from 'prop-types';
 import classNames from 'classnames';
 import './LoadIcon.scss';
 
-const LoadIcon = ({ iconUri, className }) => (
+const LoadIcon = ({ iconUri, className = '' }) => (
   <img
-    className={classNames({
-      'load-icon': true,
-      [className]: true,
-    })}
+    className={classNames('load-icon', className)}
     alt=""
     src={iconUri}
   />

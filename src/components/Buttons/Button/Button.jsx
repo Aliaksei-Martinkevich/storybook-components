@@ -2,9 +2,8 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import classNames from 'classnames';
 
+import './button-default.scss';
 import './Button.scss';
-import defaultSettings from './settings.scss';
-
 import ButtonContent from '../ButtonContent/ButtonContex.jsx';
 
 const Button = ({
@@ -13,29 +12,17 @@ const Button = ({
   disabled = false,
   processing = false,
   iconUri = undefined,
-  style = undefined,
   className = '',
-}) => {
-  let settings = defaultSettings;
-  if (style) {
-    settings = style;
-  }
-  return (
-    <button
-      style={settings}
-      className={classNames({
-        button: true,
-        processing,
-        [className]: className !== '',
-      })}
-      onClick={onClick}
-      disabled={disabled}
-      title={text}
-    >
-      <ButtonContent iconUri={processing ? iconUri : undefined} text={text} />
-    </button>
+}) => (
+  <button
+    className={classNames('button', 'button-default', className, { button_processing: processing })}
+    onClick={onClick}
+    disabled={disabled}
+    title={text}
+  >
+    <ButtonContent iconUri={processing ? iconUri : undefined} text={text} />
+  </button>
   );
-};
 
 Button.propTypes = {
   text: PropTypes.string.isRequired,
@@ -43,7 +30,6 @@ Button.propTypes = {
   disabled: PropTypes.bool,
   processing: PropTypes.bool,
   iconUri: PropTypes.any,
-  style: PropTypes.style,
   className: PropTypes.string,
 };
 
