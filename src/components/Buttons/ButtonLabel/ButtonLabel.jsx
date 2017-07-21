@@ -4,7 +4,7 @@ import './ButtonLabel.scss';
 
 
 const ButtonLabel = ({ text }) => (
-  <span className={'button-label'}>
+  <span className="button-label">
     {text}
   </span>
 );

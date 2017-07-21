@@ -4,7 +4,7 @@ import './LoadIcon.scss';
 
 const LoadIcon = ({ iconUri }) => (
   <img
-    className={'load-icon'}
+    className="load-icon"
     alt=""
     src={iconUri}
   />

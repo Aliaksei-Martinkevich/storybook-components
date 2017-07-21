@@ -10,6 +10,7 @@ const Item = ({ onClick, children, id }) => (
 Item.propTypes = {
   onClick: PropTypes.func,
   id: PropTypes.string,
+  children: PropTypes.element,
 };
 
 export default Item;

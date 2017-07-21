@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-
+import classNames from 'classnames';
 import Button from '../Button/Button.jsx';
 import settings from './settings.scss';
 import icon from '../../../../assets/icons/circle-loading-white.png';
@@ -13,7 +13,11 @@ const PrimaryButton = ({ text, onClick, className = '', disabled = false, proces
     processing={processing}
     iconUri={icon}
     style={settings}
-    className={`primary-button ${className}`}
+    className={classNames({
+      'primary-button': true,
+      [className]: true,
+    },
+    )}
   />
   );
 

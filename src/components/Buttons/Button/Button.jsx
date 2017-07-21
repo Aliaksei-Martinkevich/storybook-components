@@ -26,7 +26,7 @@ const Button = ({
       className={classNames({
         button: true,
         processing,
-        className: className !== '',
+        [className]: className !== '',
       })}
       onClick={onClick}
       disabled={disabled}
