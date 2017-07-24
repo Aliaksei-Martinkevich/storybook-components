@@ -48,7 +48,10 @@ class Dropdown extends Component {
 Dropdown.propTypes = {
   header: PropTypes.element,
   onItemClick: PropTypes.func,
-  children: PropTypes.oneOfType(PropTypes.arrayOf(PropTypes.element), PropTypes.element).isRequired,
+  children: PropTypes.oneOfType([
+    PropTypes.arrayOf(PropTypes.element),
+    PropTypes.element,
+  ]).isRequired,
 };
 
 export default Dropdown;

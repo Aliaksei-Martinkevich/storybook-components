@@ -27,7 +27,10 @@ const Content = ({ className = '', onItemClick, children, expanded = false }) =>
 Content.propTypes = {
   className: PropTypes.string,
   onItemClick: PropTypes.func,
-  children: PropTypes.oneOfType(PropTypes.arrayOf(PropTypes.element), PropTypes.element).isRequired,
+  children: PropTypes.oneOfType([
+    PropTypes.arrayOf(PropTypes.element),
+    PropTypes.element,
+  ]).isRequired,
   expanded: PropTypes.bool,
 };
 

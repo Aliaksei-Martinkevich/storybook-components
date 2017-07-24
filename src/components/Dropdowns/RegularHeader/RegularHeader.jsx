@@ -17,6 +17,7 @@ const RegularHeader = ({ text, className = '', expanded = false }) => (
 RegularHeader.propTypes = {
   text: PropTypes.string,
   className: PropTypes.string,
+  expanded: PropTypes.bool,
 };
 
 export default RegularHeader;
