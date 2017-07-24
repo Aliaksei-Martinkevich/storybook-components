@@ -4,7 +4,7 @@ import classNames from 'classnames';
 import './Content.scss';
 import Item from './Item/Item.jsx';
 
-const Content = ({ className = '', onItemClick, children, expanded = false }) => (
+const Content = ({ className, onItemClick, children, expanded }) => (
   <div className={classNames('dropdown-content', className, {
     expanded,
     collapsed: !expanded })}
@@ -24,12 +24,18 @@ const Content = ({ className = '', onItemClick, children, expanded = false }) =>
   </div>
   );
 
+Content.defaultProps = {
+  className: '',
+  onItemClick: undefined,
+  expanded: false,
+};
+
 Content.propTypes = {
   className: PropTypes.string,
   onItemClick: PropTypes.func,
   children: PropTypes.oneOfType([
-    PropTypes.arrayOf(PropTypes.element),
-    PropTypes.element,
+    PropTypes.arrayOf(PropTypes.node),
+    PropTypes.node,
   ]).isRequired,
   expanded: PropTypes.bool,
 };

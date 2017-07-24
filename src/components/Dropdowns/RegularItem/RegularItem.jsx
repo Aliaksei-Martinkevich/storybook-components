@@ -5,7 +5,7 @@ import './RegularItem.scss';
 import Remark from './Remark/Remark.jsx';
 
 
-const RegularItem = ({ onClick, text, className = '', remark = '', iconUri = '' }) => (
+const RegularItem = ({ onClick, text, className, remark, iconUri }) => (
   <div
     onClick={onClick}
     className={classNames('dropdown-regular-item', className)}
@@ -17,9 +17,16 @@ const RegularItem = ({ onClick, text, className = '', remark = '', iconUri = '' 
   </div>
   );
 
+RegularItem.defaultProps = {
+  onClick: undefined,
+  className: '',
+  remark: '',
+  iconUri: '',
+};
+
 RegularItem.propTypes = {
   onClick: PropTypes.func,
-  text: PropTypes.string,
+  text: PropTypes.string.isRequired,
   className: PropTypes.string,
   remark: PropTypes.string,
   iconUri: PropTypes.string,

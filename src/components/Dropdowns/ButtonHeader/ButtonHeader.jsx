@@ -5,7 +5,7 @@ import './ButtonHeader.scss';
 
 import Button from '../../Buttons/Button/Button.jsx';
 
-const DropdownButton = ({ text = '', className = '', theme = 'primary', expanded }) =>
+const DropdownButton = ({ text, className, theme, expanded }) =>
   (<Button
     text={text}
     theme={theme}
@@ -15,8 +15,14 @@ const DropdownButton = ({ text = '', className = '', theme = 'primary', expanded
     })}
   />);
 
+DropdownButton.defaultProps = {
+  expanded: false,
+  className: '',
+  theme: 'primary',
+};
+
 DropdownButton.propTypes = {
-  text: PropTypes.string,
+  text: PropTypes.string.isRequired,
   expanded: PropTypes.bool,
   className: PropTypes.string,
   theme: PropTypes.string,

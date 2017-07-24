@@ -4,7 +4,7 @@ import classNames from 'classnames';
 import './RegularHeader.scss';
 
 
-const RegularHeader = ({ text, className = '', expanded = false }) => (
+const RegularHeader = ({ text, className, expanded }) => (
   <div className={classNames('dropdown-regular-header', className, {
     expanded,
     collapsed: !expanded,
@@ -14,8 +14,13 @@ const RegularHeader = ({ text, className = '', expanded = false }) => (
   </div>
   );
 
+RegularHeader.defaultProps = {
+  className: '',
+  expanded: false,
+};
+
 RegularHeader.propTypes = {
-  text: PropTypes.string,
+  text: PropTypes.string.isRequired,
   className: PropTypes.string,
   expanded: PropTypes.bool,
 };

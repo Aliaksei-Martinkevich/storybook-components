@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import classNames from 'classnames';
 import './Header.scss';
 
-const Header = ({ className, children, onClick, expanded = false }) => (
+const Header = ({ className, children, onClick, expanded }) => (
   <div
     className={classNames('dropdown-header', className)}
     onClick={onClick}
@@ -14,6 +14,8 @@ const Header = ({ className, children, onClick, expanded = false }) => (
 
 Header.defaultProps = {
   className: '',
+  expanded: false,
+  onClick: undefined,
 };
 
 Header.propTypes = {

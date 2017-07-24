@@ -4,7 +4,7 @@ import PropTypes from 'prop-types';
 
 import './Remark.scss';
 
-const Remark = ({ text, className = '' }) => (
+const Remark = ({ text, className }) => (
   <span className={classNames('remark', className)}>
     {text}
   </span>);

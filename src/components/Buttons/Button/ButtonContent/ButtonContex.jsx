@@ -4,7 +4,7 @@ import './ButtonContent.scss';
 import LoadIcon from './LoadIcon/LoadIcon.jsx';
 import ButtonLabel from './ButtonLabel/ButtonLabel.jsx';
 
-const ButtonContent = ({ text, iconUri = '' }) => (
+const ButtonContent = ({ text, iconUri }) => (
   <div className="button-content">
     { iconUri
       ? <LoadIcon iconUri={iconUri} className="button-content__icon" />
@@ -13,6 +13,10 @@ const ButtonContent = ({ text, iconUri = '' }) => (
     <ButtonLabel text={text} className="butten-content__label" />
   </div>
 );
+
+ButtonContent.defaultProps = {
+  iconUri: '',
+};
 
 ButtonContent.propTypes = {
   iconUri: PropTypes.string,

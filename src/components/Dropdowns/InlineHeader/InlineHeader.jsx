@@ -4,7 +4,7 @@ import classNames from 'classnames';
 import './InlineHeader.scss';
 
 
-const InlineHeader = ({ text, className = '', expanded = false }) => (
+const InlineHeader = ({ text, className, expanded }) => (
   <span className={classNames('text_dropdown-header', className, {
     expanded,
     collapsed: !expanded,
@@ -14,8 +14,13 @@ const InlineHeader = ({ text, className = '', expanded = false }) => (
   </span>
   );
 
+InlineHeader.defaultProps = {
+  className: '',
+  expanded: false,
+};
+
 InlineHeader.propTypes = {
-  text: PropTypes.string,
+  text: PropTypes.string.isRequired,
   className: PropTypes.string,
   expanded: PropTypes.bool,
 };

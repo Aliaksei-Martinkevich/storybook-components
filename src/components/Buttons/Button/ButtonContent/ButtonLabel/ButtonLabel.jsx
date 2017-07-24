@@ -4,11 +4,15 @@ import classNames from 'classnames';
 import './ButtonLabel.scss';
 
 
-const ButtonLabel = ({ text, className = '' }) => (
+const ButtonLabel = ({ text, className }) => (
   <span className={classNames('button-label', className)}>
     {text}
   </span>
 );
+
+ButtonLabel.defaultProps = {
+  className: '',
+};
 
 ButtonLabel.propTypes = {
   text: PropTypes.string.isRequired,
