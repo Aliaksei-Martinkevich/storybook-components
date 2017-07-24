@@ -2,7 +2,7 @@ import React from 'react';
 import { storiesOf } from '@storybook/react';
 import { action } from '@storybook/addon-actions';
 
-import Content from '../../../../src/components/Dropdowns/Content/Content.jsx';
+import Content from '../../../../src/components/Dropdowns/Dropdown/Content/Content.jsx';
 
 export default storiesOf('Dropdown content', module)
   .add('Expanded', () =>

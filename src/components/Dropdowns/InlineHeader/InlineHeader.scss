@@ -1,12 +1,10 @@
-.dropdown-inline-header {
+.text_dropdown-header {
     text-decoration-line: underline;
     text-decoration-style: dotted;
-}
-
-.dropdown-inline-header:hover {
-    text-decoration-line: unset;
-}
-
-.expanded .dropdown-inline-header {
-    text-decoration-line: unset;
+    &:hover {
+        text-decoration-line: unset;
+    }
+    &.expanded {
+        text-decoration-line: unset;
+    }
 }

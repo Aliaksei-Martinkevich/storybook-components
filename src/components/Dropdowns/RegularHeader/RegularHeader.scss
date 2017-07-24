@@ -1,21 +1,18 @@
 .dropdown-regular-header {
+    box-sizing: border-box;
     color: #BBBBBB;
     border: 1px solid #CCCCCC;
     padding: 5px;
-    display: inline-block;
-    min-width: 340px;
-}
-
-.collapsed .dropdown-regular-header {
-    background-image: url('../../../../assets/icons/ico-expand-arrow.png');
-    background-repeat: no-repeat;
-    background-position: calc(100% - 5px) center;
-    background-size: 15px;
-}
-
-.expanded .dropdown-regular-header {
-    background-image: url('../../../../assets/icons/ico-collapse-arrow.png');
-    background-repeat: no-repeat;
-    background-position: calc(100% - 5px) center;
-    background-size: 15px;
+    &.collapsed {
+        background-image: url('../../../../assets/icons/ico-expand-arrow.png');
+        background-repeat: no-repeat;
+        background-position: calc(100% - 5px) center;
+        background-size: 15px;
+    }
+    &.expanded {
+        background-image: url('../../../../assets/icons/ico-collapse-arrow.png');
+        background-repeat: no-repeat;
+        background-position: calc(100% - 5px) center;
+        background-size: 15px;
+    }
 }

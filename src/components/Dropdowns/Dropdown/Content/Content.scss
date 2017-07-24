@@ -1,0 +1,12 @@
+.dropdown-content {
+    background-color: white;
+    z-index: 1;
+    border: 0.5px solid #CCC;
+    
+    &.collapsed {
+        display: none;
+    }
+    &.expanded {
+        display: block;
+    }
+}

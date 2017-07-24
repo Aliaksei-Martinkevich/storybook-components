@@ -2,8 +2,8 @@ import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import classNames from 'classnames';
 import './Dropdown.scss';
-import Header from '../Header/Header.jsx';
-import Content from '../Content/Content.jsx';
+import Header from './Header/Header.jsx';
+import Content from './Content/Content.jsx';
 
 class Dropdown extends Component {
 
@@ -14,18 +14,16 @@ class Dropdown extends Component {
       isExpanded: false,
     };
 
-    this.onClickHandler = this.onClickHandler.bind(this);
+    this.onHeaderClickHandler = this.onHeaderClickHandler.bind(this);
     this.onItemClickHandler = this.onItemClickHandler.bind(this);
   }
 
-  onClickHandler() {
+  onHeaderClickHandler() {
     this.setState(prevState => ({ isExpanded: !prevState.isExpanded }));
   }
 
   onItemClickHandler(itemId) {
-    if (typeof (this.props.onItemClick) === 'function') {
-      this.props.onItemClick(itemId);
-    }
+    this.props.onItemClick(itemId);
   }
 
   render() {
@@ -38,12 +36,17 @@ class Dropdown extends Component {
       )}
       >
         <Header
-          onClick={this.onClickHandler}
-          className={`${this.state.isExpanded ? 'expanded' : 'collapsed'}`}
+          className="dropdown__header"
+          onClick={this.onHeaderClickHandler}
+          expanded={this.state.isExpanded}
         >
           { this.props.header }
         </Header>
-        <Content onItemClick={this.onItemClickHandler}>
+        <Content
+          expanded={this.state.isExpanded}
+          className="dropdown__content"
+          onItemClick={this.onItemClickHandler}
+        >
           { this.props.children }
         </Content>
       </div>);

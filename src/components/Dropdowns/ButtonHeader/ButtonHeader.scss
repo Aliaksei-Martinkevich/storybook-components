@@ -1,19 +1,15 @@
-.dropdown-button-header {
-    padding-right: 20px;
-    min-width: 200px;
-    margin-bottom: 5px;
-}
+.button_dropdown-header {
+    &.collapsed {
+        background-image: url('../../../../assets/icons/ico-expand-arrow.png');
+        background-repeat: no-repeat;
+        background-position: calc(100% - 20px) center;
+        background-size: 15px;
+    }
 
-.collapsed .dropdown-button-header {
-    background-image: url('../../../../assets/icons/ico-expand-arrow.png');
-    background-repeat: no-repeat;
-    background-position: calc(100% - 20px) center;
-    background-size: 15px;
-}
-
-.expanded .dropdown-button-header {
-    background-image: url('../../../../assets/icons/ico-collapse-arrow.png');
-    background-repeat: no-repeat;
-    background-position: calc(100% - 20px) center;
-    background-size: 15px;
+    &.expanded {
+        background-image: url('../../../../assets/icons/ico-collapse-arrow.png');
+        background-repeat: no-repeat;
+        background-position: calc(100% - 20px) center;
+        background-size: 15px;
+    }
 }

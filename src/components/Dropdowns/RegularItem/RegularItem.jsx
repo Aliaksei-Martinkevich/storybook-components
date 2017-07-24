@@ -2,10 +2,11 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import classNames from 'classnames';
 import './RegularItem.scss';
-import Remark from '../Remark/Remark.jsx';
+import Remark from './Remark/Remark.jsx';
 
 
 const RegularItem = ({ onClick, text, className = '', remark = '', iconUri = '' }) => {
+
   const iconImageStyle = {
     backgroundImage: `url(${iconUri})`,
     paddingLeft: '25px',
@@ -17,15 +18,12 @@ const RegularItem = ({ onClick, text, className = '', remark = '', iconUri = '' 
   return (
     <div
       onClick={onClick}
-      className={classNames({
-        'dropdown-regular-item': true,
-        [className]: true,
-      })}
+      className={classNames('dropdown-regular-item', className)}
       style={iconUri ? iconImageStyle : undefined}
       title={text}
     >
       {text}
-      { remark ? <Remark text={remark} /> : '' }
+      { remark ? <Remark className="dropdown-regular-item__remark" text={remark} /> : '' }
     </div>
   );
 };

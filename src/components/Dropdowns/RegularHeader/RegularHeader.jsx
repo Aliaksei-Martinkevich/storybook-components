@@ -4,10 +4,10 @@ import classNames from 'classnames';
 import './RegularHeader.scss';
 
 
-const RegularHeader = ({ text, className = '' }) => (
-  <div className={classNames({
-    'dropdown-regular-header': true,
-    [className]: true,
+const RegularHeader = ({ text, className = '', expanded = false }) => (
+  <div className={classNames('dropdown-regular-header', className, {
+    expanded,
+    collapsed: !expanded,
   })}
   >
     {text}

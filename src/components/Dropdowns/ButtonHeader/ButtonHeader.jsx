@@ -1,18 +1,23 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import classNames from 'classnames';
 import './ButtonHeader.scss';
 
 import Button from '../../Buttons/Button/Button.jsx';
 
-const DropdownButton = ({ text = '' }) =>
+const DropdownButton = ({ text = '', className = '', theme = 'primary', expanded }) =>
   (<Button
     text={text}
-    theme="primary"
-    className="dropdown-button-header"
+    theme={theme}
+    className={classNames('button_dropdown-header', className, {
+      expanded,
+      collapsed: !expanded,
+    })}
   />);
 
 DropdownButton.propTypes = {
   text: PropTypes.string,
+  expanded: PropTypes.bool,
 };
 
 export default DropdownButton;

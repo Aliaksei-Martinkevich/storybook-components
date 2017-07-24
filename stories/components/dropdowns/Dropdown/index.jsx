@@ -10,7 +10,7 @@ import InlineHeader from '../../../../src/components/Dropdowns/InlineHeader/Inli
 
 export default storiesOf('Dropdown', module)
   .add('With regular items', () =>
-    (<Dropdown onItemClick={action('Item clicked')} header="Plain text header">
+    (<Dropdown onItemClick={action('Item clicked')} header={<span>Plain text header</span>}>
       <RegularItem
         key="Item 1"
         text="Some text"
@@ -36,7 +36,7 @@ export default storiesOf('Dropdown', module)
       <RegularItem
         key="Item 6"
         text="Some text with icon"
-        iconUri="https://material/io/guidelines/static/spec/images/callouts/default/svg"
+        iconUri="https://material.io/guidelines/static/spec/images/callouts/default.svg"
       />
     </Dropdown>))
   .add('With regular header', () =>
@@ -63,7 +63,7 @@ export default storiesOf('Dropdown', module)
       />
       <RegularItem
         text="Some text with icon"
-        iconUri="https://material/io/guidelines/static/spec/images/callouts/default/svg"
+        iconUri="https://material.io/guidelines/static/spec/images/callouts/default.svg"
       />
     </Dropdown>))
   .add('With button header', () =>
@@ -90,7 +90,7 @@ export default storiesOf('Dropdown', module)
       />
       <RegularItem
         text="Some text with icon"
-        iconUri="https://material/io/guidelines/static/spec/images/callouts/default/svg"
+        iconUri="https://material.io/guidelines/static/spec/images/callouts/default.svg"
       />
     </Dropdown>))
   .add('With inline header', () =>
@@ -117,6 +117,6 @@ export default storiesOf('Dropdown', module)
       />
       <RegularItem
         text="Some text with icon"
-        iconUri="https://material/io/guidelines/static/spec/images/callouts/default/svg"
+        iconUri="https://material.io/guidelines/static/spec/images/callouts/default.svg"
       />
     </Dropdown>));

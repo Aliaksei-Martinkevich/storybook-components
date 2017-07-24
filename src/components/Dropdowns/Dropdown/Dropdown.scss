@@ -1,4 +1,9 @@
 .dropdown {
-    position: relative;
-    display: block;
+    &__header {
+        display: block;
+    };
+
+    &__content {
+        display: inline-block;
+    };
 }

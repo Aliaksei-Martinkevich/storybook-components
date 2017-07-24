@@ -2,7 +2,7 @@ import React from 'react';
 import { storiesOf } from '@storybook/react';
 import { action } from '@storybook/addon-actions';
 
-import Header from '../../../../src/components/Dropdowns/Header/Header.jsx';
+import Header from '../../../../src/components/Dropdowns/Dropdown/Header/Header.jsx';
 import Button from '../../../../src/components/Buttons/Button/Button.jsx';
 
 export default storiesOf('Dropdown Header', module)
