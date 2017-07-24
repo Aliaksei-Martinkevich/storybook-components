@@ -18,6 +18,8 @@ const DropdownButton = ({ text = '', className = '', theme = 'primary', expanded
 DropdownButton.propTypes = {
   text: PropTypes.string,
   expanded: PropTypes.bool,
+  className: PropTypes.string,
+  theme: PropTypes.string,
 };
 
 export default DropdownButton;

@@ -1,13 +1,13 @@
 .button_dropdown-header {
     &.collapsed {
-        background-image: url('../../../../assets/icons/ico-expand-arrow.png');
+        background-image: url('../../../../assets/icons/svg/collapse_arrow-white.svg');
         background-repeat: no-repeat;
         background-position: calc(100% - 20px) center;
         background-size: 15px;
     }
 
     &.expanded {
-        background-image: url('../../../../assets/icons/ico-collapse-arrow.png');
+        background-image: url('../../../../assets/icons/svg/expand_arrow-white.svg');
         background-repeat: no-repeat;
         background-position: calc(100% - 20px) center;
         background-size: 15px;

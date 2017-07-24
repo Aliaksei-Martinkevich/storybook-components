@@ -5,10 +5,7 @@ import './Header.scss';
 
 const Header = ({ className, children, onClick, expanded = false }) => (
   <div
-    className={classNames({
-      'dropdown-header': true,
-      [className]: true,
-    })}
+    className={classNames('dropdown-header', className)}
     onClick={onClick}
   >
     {React.Children.map(children, child => React.cloneElement(child, { expanded }))}
@@ -22,7 +19,7 @@ Header.defaultProps = {
 Header.propTypes = {
   className: PropTypes.string,
   onClick: PropTypes.func,
-  children: PropTypes.element,
+  children: PropTypes.element.isRequired,
   expanded: PropTypes.bool,
 };
 

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   version="1.1"
+   id="svg3680"
+   width="21.344"
+   height="12.608"
+   viewBox="0 0 21.344 12.608"
+   sodipodi:docname="collapse_arrow.svg"
+   inkscape:version="0.92.1 r15371">
+  <metadata
+     id="metadata3686">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <defs
+     id="defs3684" />
+  <sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="1920"
+     inkscape:window-height="1017"
+     id="namedview3682"
+     showgrid="false"
+     inkscape:zoom="67.258884"
+     inkscape:cx="7.9694247"
+     inkscape:cy="6.0331109"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg3680" />
+  <path
+     style="fill:#000000;stroke-width:0.016"
+     d="m 5.5102273,5.5161109 c 2.84461,-2.84462 5.1756367,-5.17203625 5.1800367,-5.17203625 0.0044,0 2.335427,2.32741625 5.180037,5.17203625 L 21.042318,10.688148 20.290264,11.440074 19.538211,12.192 15.114237,7.768048 10.690264,3.3440959 6.2662903,7.768048 1.8423173,12.192 1.0902633,11.440074 0.33820927,10.688148 Z"
+     id="path3690"
+     inkscape:connector-curvature="0" />
+</svg>

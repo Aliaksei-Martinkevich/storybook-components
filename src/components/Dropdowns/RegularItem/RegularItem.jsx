@@ -5,28 +5,17 @@ import './RegularItem.scss';
 import Remark from './Remark/Remark.jsx';
 
 
-const RegularItem = ({ onClick, text, className = '', remark = '', iconUri = '' }) => {
-
-  const iconImageStyle = {
-    backgroundImage: `url(${iconUri})`,
-    paddingLeft: '25px',
-    backgroundRepeat: 'no-repeat',
-    backgroundPosition: '2.5px center',
-    backgroundSize: '20px',
-  };
-
-  return (
-    <div
-      onClick={onClick}
-      className={classNames('dropdown-regular-item', className)}
-      style={iconUri ? iconImageStyle : undefined}
-      title={text}
-    >
-      {text}
-      { remark ? <Remark className="dropdown-regular-item__remark" text={remark} /> : '' }
-    </div>
+const RegularItem = ({ onClick, text, className = '', remark = '', iconUri = '' }) => (
+  <div
+    onClick={onClick}
+    className={classNames('dropdown-regular-item', className)}
+    title={text}
+  >
+    {iconUri ? <img className="dropdown-regular-item__icon" src={iconUri} alt="" /> : ''}
+    <span>{text}</span>
+    { remark ? <Remark className="dropdown-regular-item__remark" text={remark} /> : '' }
+  </div>
   );
-};
 
 RegularItem.propTypes = {
   onClick: PropTypes.func,

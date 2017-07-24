@@ -7,7 +7,7 @@ import Content from '../../../../src/components/Dropdowns/Dropdown/Content/Conte
 export default storiesOf('Dropdown content', module)
   .add('Expanded', () =>
     (<Content
-      isExpanded
+      expanded
       onItemClick={action('Menu item click')}
     >
       <div itemId="one">Item 1</div>
@@ -16,7 +16,7 @@ export default storiesOf('Dropdown content', module)
     </Content>))
   .add('Long text', () =>
     (<Content
-      isExpanded
+      expanded
       onItemClick={action('Menu item click')}
     >
       <div itemId="one">Item 1</div>
@@ -25,7 +25,7 @@ export default storiesOf('Dropdown content', module)
     </Content>))
   .add('Remark Items', () =>
     (<Content
-      isExpanded
+      expanded
       onItemClick={action('Menu item click')}
     >
       <div itemId="one">Item 1</div>

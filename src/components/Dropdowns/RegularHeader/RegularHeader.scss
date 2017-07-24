@@ -4,13 +4,13 @@
     border: 1px solid #CCCCCC;
     padding: 5px;
     &.collapsed {
-        background-image: url('../../../../assets/icons/ico-expand-arrow.png');
+        background-image: url('../../../../assets/icons/svg/expand_arrow-black.svg');
         background-repeat: no-repeat;
         background-position: calc(100% - 5px) center;
         background-size: 15px;
     }
     &.expanded {
-        background-image: url('../../../../assets/icons/ico-collapse-arrow.png');
+        background-image: url('../../../../assets/icons/svg/collapse_arrow-black.svg');
         background-repeat: no-repeat;
         background-position: calc(100% - 5px) center;
         background-size: 15px;

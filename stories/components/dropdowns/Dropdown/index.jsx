@@ -7,6 +7,7 @@ import RegularItem from '../../../../src/components/Dropdowns/RegularItem/Regula
 import RegularHeader from '../../../../src/components/Dropdowns/RegularHeader/RegularHeader.jsx';
 import ButtonHeader from '../../../../src/components/Dropdowns/ButtonHeader/ButtonHeader.jsx';
 import InlineHeader from '../../../../src/components/Dropdowns/InlineHeader/InlineHeader.jsx';
+import icon from '../../../../assets/icons/svg/loading-circle-dashes-black.svg';
 
 export default storiesOf('Dropdown', module)
   .add('With regular items', () =>
@@ -36,7 +37,7 @@ export default storiesOf('Dropdown', module)
       <RegularItem
         key="Item 6"
         text="Some text with icon"
-        iconUri="https://material.io/guidelines/static/spec/images/callouts/default.svg"
+        iconUri={icon}
       />
     </Dropdown>))
   .add('With regular header', () =>
@@ -63,7 +64,7 @@ export default storiesOf('Dropdown', module)
       />
       <RegularItem
         text="Some text with icon"
-        iconUri="https://material.io/guidelines/static/spec/images/callouts/default.svg"
+        iconUri={icon}
       />
     </Dropdown>))
   .add('With button header', () =>
@@ -90,7 +91,7 @@ export default storiesOf('Dropdown', module)
       />
       <RegularItem
         text="Some text with icon"
-        iconUri="https://material.io/guidelines/static/spec/images/callouts/default.svg"
+        iconUri={icon}
       />
     </Dropdown>))
   .add('With inline header', () =>
@@ -117,6 +118,6 @@ export default storiesOf('Dropdown', module)
       />
       <RegularItem
         text="Some text with icon"
-        iconUri="https://material.io/guidelines/static/spec/images/callouts/default.svg"
+        iconUri={icon}
       />
     </Dropdown>));

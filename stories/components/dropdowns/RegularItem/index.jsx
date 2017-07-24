@@ -3,6 +3,7 @@ import { storiesOf } from '@storybook/react';
 import { action } from '@storybook/addon-actions';
 
 import RegularItem from '../../../../src/components/Dropdowns/RegularItem/RegularItem.jsx';
+import icon from '../../../../assets/icons/svg/loading-circle-dashes-black.svg';
 
 export default storiesOf('Dropdown regular Item', module)
   .add('With text', () =>
@@ -30,5 +31,5 @@ export default storiesOf('Dropdown regular Item', module)
     (<RegularItem
       onClick={action('Item clicked')}
       text="Some text"
-      iconUri="https://material.io/guidelines/static/spec/images/callouts/default.svg"
+      iconUri={icon}
     />));

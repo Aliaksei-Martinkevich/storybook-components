@@ -16,4 +16,4 @@ export {
   RegularHeaderStories,
   ButtonHeaderStories,
   InlineHeaderStories,
-}
+};

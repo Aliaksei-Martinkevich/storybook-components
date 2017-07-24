@@ -10,7 +10,7 @@ const Item = ({ onClick, children, id, className = '' }) => (
 Item.propTypes = {
   onClick: PropTypes.func,
   id: PropTypes.string,
-  children: PropTypes.element,
+  children: PropTypes.element.isRequired,
   className: PropTypes.string,
 };
 
