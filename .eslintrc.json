@@ -3,9 +3,11 @@
     "plugins": [
         "react",
         "jsx-a11y",
-        "import"
+        "import",
+        "class-property"
     ],
     "rules": {
         "import/extensions": "off"
-    }
+    },
+    "parser": "babel-eslint"
 }

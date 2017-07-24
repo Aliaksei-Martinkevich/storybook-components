@@ -7,22 +7,15 @@ import Content from './Content/Content.jsx';
 
 class Dropdown extends Component {
 
-  constructor(props) {
-    super(props);
+  state = {
+    isExpanded: false,
+  };
 
-    this.state = {
-      isExpanded: false,
-    };
-
-    this.onHeaderClickHandler = this.onHeaderClickHandler.bind(this);
-    this.onItemClickHandler = this.onItemClickHandler.bind(this);
-  }
-
-  onHeaderClickHandler() {
+  onHeaderClickHandler = () => {
     this.setState(prevState => ({ isExpanded: !prevState.isExpanded }));
   }
 
-  onItemClickHandler(itemId) {
+  onItemClickHandler = (itemId) => {
     this.props.onItemClick(itemId);
   }
 
@@ -40,14 +33,14 @@ class Dropdown extends Component {
           onClick={this.onHeaderClickHandler}
           expanded={this.state.isExpanded}
         >
-          { this.props.header }
+          {this.props.header}
         </Header>
         <Content
           expanded={this.state.isExpanded}
           className="dropdown__content"
           onItemClick={this.onItemClickHandler}
         >
-          { this.props.children }
+          {this.props.children}
         </Content>
       </div>);
   }
