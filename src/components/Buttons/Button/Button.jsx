@@ -9,9 +9,16 @@ import './button_theme-transparent.scss';
 import './Button.scss';
 import ButtonContent from './ButtonContent/ButtonContex.jsx';
 
+export const BUTTON_THEMES = {
+  DEFAULT: 'button_theme-default',
+  PRIMARY: 'button_theme-primary',
+  SECONDARY: 'button_theme-secondary',
+  TRANSPARENT: 'button_theme-transparent',
+};
+
 const Button = ({ text, onClick, disabled, processing, iconUri, className, theme }) => (
   <button
-    className={classNames('button', `button_theme-${theme}`, { button_processing: processing }, className)}
+    className={classNames('button', theme, { button_processing: processing }, className)}
     onClick={onClick}
     disabled={disabled}
     title={text}
@@ -26,7 +33,7 @@ Button.defaultProps = {
   processing: false,
   iconUri: '',
   className: '',
-  theme: 'default',
+  theme: BUTTON_THEMES.DEFAULT,
 };
 
 Button.propTypes = {
@@ -36,7 +43,7 @@ Button.propTypes = {
   processing: PropTypes.bool,
   iconUri: PropTypes.string,
   className: PropTypes.string,
-  theme: PropTypes.oneOf(['default', 'primary', 'secondary', 'transparent']),
+  theme: PropTypes.oneOf(BUTTON_THEMES),
 };
 
 export default Button;

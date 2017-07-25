@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import classNames from 'classnames';
 import './ButtonHeader.scss';
 
-import Button from '../../Buttons/Button/Button.jsx';
+import Button, { BUTTON_THEMES } from '../../Buttons/Button/Button.jsx';
 
 const DropdownButton = ({ text, className, theme, expanded }) =>
   (<Button
@@ -18,14 +18,14 @@ const DropdownButton = ({ text, className, theme, expanded }) =>
 DropdownButton.defaultProps = {
   expanded: false,
   className: '',
-  theme: 'primary',
+  theme: BUTTON_THEMES.PRIMARY,
 };
 
 DropdownButton.propTypes = {
   text: PropTypes.string.isRequired,
   expanded: PropTypes.bool,
   className: PropTypes.string,
-  theme: PropTypes.string,
+  theme: PropTypes.oneOf(BUTTON_THEMES),
 };
 
 export default DropdownButton;
