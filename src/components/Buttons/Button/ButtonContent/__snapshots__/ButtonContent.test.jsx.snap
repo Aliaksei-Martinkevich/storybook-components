@@ -1,0 +1,18 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Should render without fails 1`] = `
+<div
+  className="button-content"
+>
+  <img
+    alt=""
+    className="load-icon button-content__icon"
+    src="test-file-stub"
+  />
+  <span
+    className="button-label butten-content__label"
+  >
+    Some text
+  </span>
+</div>
+`;
