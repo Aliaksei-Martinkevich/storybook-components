@@ -89,3 +89,48 @@ exports[`Dropdown Should expands on click 2`] = `
   </div>
 </div>
 `;
+
+exports[`Dropdown Should expands on click 3`] = `
+<div
+  className="dropdown class-name-example collapsed"
+>
+  <div
+    className="dropdown-header dropdown__header"
+    onClick={[Function]}
+  >
+    <div
+      expanded={false}
+    >
+      Header
+    </div>
+  </div>
+  <div
+    className="dropdown-content dropdown__content collapsed"
+  >
+    <div
+      className="dropdown-content__item"
+      onClick={[Function]}
+    >
+      <div>
+        Item 1
+      </div>
+    </div>
+    <div
+      className="dropdown-content__item"
+      onClick={[Function]}
+    >
+      <div>
+        Item 2
+      </div>
+    </div>
+    <div
+      className="dropdown-content__item"
+      onClick={[Function]}
+    >
+      <div>
+        Item 3
+      </div>
+    </div>
+  </div>
+</div>
+`;

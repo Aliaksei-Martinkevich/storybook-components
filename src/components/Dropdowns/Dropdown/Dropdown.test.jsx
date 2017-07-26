@@ -24,5 +24,8 @@ describe('Dropdown', () => {
     expect(tree).toMatchSnapshot();
     tree.children[1].children.forEach(elem => elem.props.onClick());
     expect(onItemClick.mock.calls).toEqual([['0'], ['1'], ['2']]);
+    tree.children[0].props.onClick();
+    tree = component.toJSON();
+    expect(tree).toMatchSnapshot();
   });
 });
