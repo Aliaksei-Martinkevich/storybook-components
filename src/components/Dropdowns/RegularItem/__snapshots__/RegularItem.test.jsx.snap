@@ -1,0 +1,19 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Regular item Should render without fails 1`] = `
+<div
+  className="dropdown-regular-item class-name-example"
+  onClick={[Function]}
+  title="Some text"
+>
+  <img
+    alt=""
+    className="dropdown-regular-item__icon"
+    src="test-file-stub"
+  />
+  <span>
+    Some text
+  </span>
+  
+</div>
+`;

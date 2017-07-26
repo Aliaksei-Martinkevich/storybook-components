@@ -1,0 +1,91 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Dropdown Should expands on click 1`] = `
+<div
+  className="dropdown class-name-example collapsed"
+>
+  <div
+    className="dropdown-header dropdown__header"
+    onClick={[Function]}
+  >
+    <div
+      expanded={false}
+    >
+      Header
+    </div>
+  </div>
+  <div
+    className="dropdown-content dropdown__content collapsed"
+  >
+    <div
+      className="dropdown-content__item"
+      onClick={[Function]}
+    >
+      <div>
+        Item 1
+      </div>
+    </div>
+    <div
+      className="dropdown-content__item"
+      onClick={[Function]}
+    >
+      <div>
+        Item 2
+      </div>
+    </div>
+    <div
+      className="dropdown-content__item"
+      onClick={[Function]}
+    >
+      <div>
+        Item 3
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Dropdown Should expands on click 2`] = `
+<div
+  className="dropdown class-name-example expanded"
+>
+  <div
+    className="dropdown-header dropdown__header"
+    onClick={[Function]}
+  >
+    <div
+      expanded={true}
+    >
+      Header
+    </div>
+  </div>
+  <div
+    className="dropdown-content dropdown__content expanded"
+  >
+    <div
+      className="dropdown-content__item"
+      onClick={[Function]}
+    >
+      <div>
+        Item 1
+      </div>
+    </div>
+    <div
+      className="dropdown-content__item"
+      onClick={[Function]}
+    >
+      <div>
+        Item 2
+      </div>
+    </div>
+    <div
+      className="dropdown-content__item"
+      onClick={[Function]}
+    >
+      <div>
+        Item 3
+      </div>
+    </div>
+  </div>
+</div>
+`;

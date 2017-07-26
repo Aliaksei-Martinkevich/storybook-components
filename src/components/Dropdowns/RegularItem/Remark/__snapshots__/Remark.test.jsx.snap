@@ -1,0 +1,9 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Remark Should render without fails 1`] = `
+<span
+  className="remark class-name-example"
+>
+  Some text
+</span>
+`;

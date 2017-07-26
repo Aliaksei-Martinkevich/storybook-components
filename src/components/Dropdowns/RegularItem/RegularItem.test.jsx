@@ -1,15 +1,20 @@
 import React from 'react';
 import renderer from 'react-test-renderer';
-import ButtonContent from './ButtonContex.jsx';
-import icon from '../../../../../assets/icons/svg/loading-circle-dashes-black.svg';
+import RegularItem from './RegularItem';
+import icon from '../../../../assets/icons/svg/collapse_arrow-black.svg';
 
-describe('Button content', () => {
+describe('Regular item', () => {
   it('Should render without fails', () => {
     const customClassName = 'class-name-example';
     const text = 'Some text';
+    const onClick = jest.fn();
     const component = renderer.create(
-      <ButtonContent className={customClassName} text={text} iconUri={icon} />,
-    );
+      <RegularItem
+        className={customClassName}
+        text={text}
+        iconUri={icon}
+        onClick={onClick}
+      />);
     const tree = component.toJSON();
     expect(tree).toMatchSnapshot();
   });

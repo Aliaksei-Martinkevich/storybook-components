@@ -9,8 +9,12 @@ const Remark = ({ text, className }) => (
     {text}
   </span>);
 
+Remark.defaultProps = {
+  className: '',
+};
+
 Remark.propTypes = {
-  text: PropTypes.string,
+  text: PropTypes.string.isRequired,
   className: PropTypes.string,
 };
 

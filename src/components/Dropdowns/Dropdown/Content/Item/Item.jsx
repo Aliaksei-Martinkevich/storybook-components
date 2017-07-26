@@ -8,12 +8,11 @@ const Item = ({ onClick, children, id, className }) => (
   );
 
 Item.defaultProps = {
-  onClick: undefined,
   className: '',
 };
 
 Item.propTypes = {
-  onClick: PropTypes.func,
+  onClick: PropTypes.func.isRequired,
   id: PropTypes.string.isRequired,
   children: PropTypes.element.isRequired,
   className: PropTypes.string,

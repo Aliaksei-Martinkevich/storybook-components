@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Should render without fails 1`] = `
+exports[`Load icon Should render without fails 1`] = `
 <img
   alt=""
   className="load-icon class-name-example"

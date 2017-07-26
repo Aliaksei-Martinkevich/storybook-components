@@ -1,0 +1,17 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Regular header Should be collapsed 1`] = `
+<div
+  className="dropdown-regular-header class-name-example collapsed"
+>
+  Some text
+</div>
+`;
+
+exports[`Regular header Should be expanded 1`] = `
+<div
+  className="dropdown-regular-header class-name-example expanded"
+>
+  Some text
+</div>
+`;

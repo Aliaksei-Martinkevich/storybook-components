@@ -1,0 +1,44 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Content Children should be clickable 1`] = `
+<div
+  className="dropdown-content class-name-example collapsed"
+>
+  <div
+    className="dropdown-content__item"
+    onClick={[Function]}
+  >
+    <div>
+      Child 1
+    </div>
+  </div>
+  <div
+    className="dropdown-content__item"
+    onClick={[Function]}
+  >
+    <div>
+      Child 2
+    </div>
+  </div>
+  <div
+    className="dropdown-content__item"
+    onClick={[Function]}
+  >
+    <div>
+      Child 3
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Content Should be collapsed 1`] = `
+<div
+  className="dropdown-content class-name-example collapsed"
+/>
+`;
+
+exports[`Content Should be expanded 1`] = `
+<div
+  className="dropdown-content class-name-example expanded"
+/>
+`;

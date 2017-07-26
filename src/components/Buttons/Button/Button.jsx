@@ -43,7 +43,9 @@ Button.propTypes = {
   processing: PropTypes.bool,
   iconUri: PropTypes.string,
   className: PropTypes.string,
-  theme: PropTypes.oneOf(BUTTON_THEMES),
+  theme: PropTypes.oneOf(Object
+      .getOwnPropertyNames(BUTTON_THEMES)
+      .map(name => BUTTON_THEMES[name])),
 };
 
 export default Button;

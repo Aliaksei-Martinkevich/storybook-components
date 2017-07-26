@@ -1,0 +1,15 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Item Should render without fails 1`] = `
+<div
+  className="class-name-example"
+  onClick={[Function]}
+/>
+`;
+
+exports[`Item Should send it's id into onClick callback 1`] = `
+<div
+  className="class-name-example"
+  onClick={[Function]}
+/>
+`;

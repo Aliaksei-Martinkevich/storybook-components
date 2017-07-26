@@ -1,0 +1,17 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Inline header Should be collapsed 1`] = `
+<span
+  className="text_dropdown-header class-name-example collapsed"
+>
+  Some text
+</span>
+`;
+
+exports[`Inline header Should be expanded 1`] = `
+<span
+  className="text_dropdown-header class-name-example expanded"
+>
+  Some text
+</span>
+`;

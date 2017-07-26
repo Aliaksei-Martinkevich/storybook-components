@@ -1,0 +1,23 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Header Should be collapsed and collapse it's children 1`] = `
+<div
+  className="dropdown-header class-name-example"
+  onClick={undefined}
+>
+  <div
+    expanded={false}
+  />
+</div>
+`;
+
+exports[`Header Should be expanded and expand it's children 1`] = `
+<div
+  className="dropdown-header class-name-example"
+  onClick={undefined}
+>
+  <div
+    expanded={true}
+  />
+</div>
+`;

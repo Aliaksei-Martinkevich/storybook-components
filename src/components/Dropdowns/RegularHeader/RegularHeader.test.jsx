@@ -1,35 +1,31 @@
 import React from 'react';
 import renderer from 'react-test-renderer';
-import Button, { BUTTON_THEMES } from './Button.jsx';
-import icon from '../../../../assets/icons/svg/loading-circle-dashes-black.svg';
+import RegularHeader from './RegularHeader.jsx';
 
-describe('Button', () => {
-  it('Should render without fails', () => {
+describe('Regular header', () => {
+  it('Should be collapsed', () => {
     const customClassName = 'class-name-example';
     const text = 'Some text';
     const component = renderer.create(
-      <Button
+      <RegularHeader
         className={customClassName}
         text={text}
-        theme={BUTTON_THEMES.DEFAULT}
-      />,
-  );
+      />);
+
     const tree = component.toJSON();
     expect(tree).toMatchSnapshot();
   });
 
-  it('Should add processing class', () => {
+  it('Should be expanded', () => {
     const customClassName = 'class-name-example';
     const text = 'Some text';
     const component = renderer.create(
-      <Button
+      <RegularHeader
         className={customClassName}
         text={text}
-        iconUri={icon}
-        processing
-        theme={BUTTON_THEMES.DEFAULT}
-      />,
-  );
+        expanded
+      />);
+
     const tree = component.toJSON();
     expect(tree).toMatchSnapshot();
   });

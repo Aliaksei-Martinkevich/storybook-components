@@ -21,7 +21,7 @@ class Dropdown extends Component {
 
   render() {
     return (
-      <div className={classNames('dropdown', {
+      <div className={classNames('dropdown', this.props.className, {
         expanded: this.state.isExpanded,
         collapsed: !this.state.isExpanded,
       },
@@ -47,6 +47,7 @@ class Dropdown extends Component {
 
 Dropdown.defaultProps = {
   onItemClick: undefined,
+  className: '',
 };
 
 Dropdown.propTypes = {
@@ -56,6 +57,7 @@ Dropdown.propTypes = {
     PropTypes.arrayOf(PropTypes.node),
     PropTypes.node,
   ]).isRequired,
+  className: PropTypes.string,
 };
 
 export default Dropdown;

@@ -1,12 +1,12 @@
 import React from 'react';
 import renderer from 'react-test-renderer';
-import ButtonLabel from './ButtonLabel.jsx';
+import Remark from './Remark.jsx';
 
-describe('Button label', () => {
+describe('Remark', () => {
   it('Should render without fails', () => {
     const customClassName = 'class-name-example';
     const text = 'Some text';
-    const component = renderer.create(<ButtonLabel className={customClassName} text={text} />);
+    const component = renderer.create(<Remark className={customClassName} text={text} />);
     const tree = component.toJSON();
     expect(tree).toMatchSnapshot();
   });

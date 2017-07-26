@@ -1,20 +1,15 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Button Should add processing class 1`] = `
+exports[`Button header Should be collapsed 1`] = `
 <button
-  className="button button_theme-default button_processing class-name-example"
-  disabled={true}
+  className="button button_theme-default button_dropdown-header class-name-example collapsed"
+  disabled={false}
   onClick={undefined}
   title="Some text"
 >
   <div
     className="button-content"
   >
-    <img
-      alt=""
-      className="load-icon button-content__icon"
-      src="test-file-stub"
-    />
     <span
       className="button-label butten-content__label"
     >
@@ -24,9 +19,9 @@ exports[`Button Should add processing class 1`] = `
 </button>
 `;
 
-exports[`Button Should render without fails 1`] = `
+exports[`Button header Should be expanded 1`] = `
 <button
-  className="button button_theme-default class-name-example"
+  className="button button_theme-primary button_dropdown-header class-name-example expanded"
   disabled={false}
   onClick={undefined}
   title="Some text"
