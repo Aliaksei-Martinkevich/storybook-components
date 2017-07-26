@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Regular item Should render without fails 1`] = `
+exports[`Regular item Should render with icon 1`] = `
 <div
   className="dropdown-regular-item class-name-example"
   onClick={[Function]}
@@ -15,5 +15,23 @@ exports[`Regular item Should render without fails 1`] = `
     Some text
   </span>
   
+</div>
+`;
+
+exports[`Regular item Should render with remark 1`] = `
+<div
+  className="dropdown-regular-item class-name-example"
+  onClick={[Function]}
+  title="Some text"
+>
+  
+  <span>
+    Some text
+  </span>
+  <span
+    className="remark dropdown-regular-item__remark"
+  >
+    Some text
+  </span>
 </div>
 `;
