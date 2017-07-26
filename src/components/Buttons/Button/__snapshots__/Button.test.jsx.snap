@@ -1,0 +1,44 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Should add processing class 1`] = `
+<button
+  className="button button_theme-default button_processing class-name-example"
+  disabled={true}
+  onClick={undefined}
+  title="Some text"
+>
+  <div
+    className="button-content"
+  >
+    <img
+      alt=""
+      className="load-icon button-content__icon"
+      src="test-file-stub"
+    />
+    <span
+      className="button-label butten-content__label"
+    >
+      Some text
+    </span>
+  </div>
+</button>
+`;
+
+exports[`Should render without fails 1`] = `
+<button
+  className="button button_theme-default class-name-example"
+  disabled={false}
+  onClick={undefined}
+  title="Some text"
+>
+  <div
+    className="button-content"
+  >
+    <span
+      className="button-label butten-content__label"
+    >
+      Some text
+    </span>
+  </div>
+</button>
+`;

@@ -20,7 +20,7 @@ const Button = ({ text, onClick, disabled, processing, iconUri, className, theme
   <button
     className={classNames('button', theme, { button_processing: processing }, className)}
     onClick={onClick}
-    disabled={disabled}
+    disabled={disabled || processing}
     title={text}
   >
     <ButtonContent iconUri={processing ? iconUri : undefined} text={text} />
