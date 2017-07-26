@@ -9,5 +9,9 @@
     "rules": {
         "import/extensions": "off"
     },
-    "parser": "babel-eslint"
+    "parser": "babel-eslint",
+    "env": {
+        "jest": true,
+        "browser": true
+    }
 }
