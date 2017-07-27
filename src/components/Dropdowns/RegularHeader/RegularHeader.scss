@@ -3,13 +3,13 @@
     color: #BBBBBB;
     border: 1px solid #CCCCCC;
     padding: 5px;
-    &.collapsed {
+    &_collapsed {
         background-image: url('../../../../assets/icons/svg/expand_arrow-black.svg');
         background-repeat: no-repeat;
         background-position: calc(100% - 5px) center;
         background-size: 15px;
     }
-    &.expanded {
+    &_expanded {
         background-image: url('../../../../assets/icons/svg/collapse_arrow-black.svg');
         background-repeat: no-repeat;
         background-position: calc(100% - 5px) center;

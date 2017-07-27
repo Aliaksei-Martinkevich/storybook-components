@@ -24,5 +24,5 @@ $border-type: solid;
 
     &:disabled { @include colors($font-disabled, $background-disabled, $border-disabled); }
 
-    &.button_processing { @include two-colors-gradient($background-hover, $background-regular); }
+    &.button_processing:disabled { color: $font-regular; @include two-colors-gradient($background-hover, $background-regular); }
 }

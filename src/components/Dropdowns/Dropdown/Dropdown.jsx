@@ -22,8 +22,8 @@ class Dropdown extends Component {
   render() {
     return (
       <div className={classNames('dropdown', this.props.className, {
-        expanded: this.state.isExpanded,
-        collapsed: !this.state.isExpanded,
+        dropdown_expanded: this.state.isExpanded,
+        dropdown_collapsed: !this.state.isExpanded,
       },
       )}
       >

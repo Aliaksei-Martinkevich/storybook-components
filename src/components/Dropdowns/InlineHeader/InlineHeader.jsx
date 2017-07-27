@@ -6,8 +6,8 @@ import './InlineHeader.scss';
 
 const InlineHeader = ({ text, className, expanded }) => (
   <span className={classNames('text_dropdown-header', className, {
-    expanded,
-    collapsed: !expanded,
+    'text_dropdown-header_expanded': expanded,
+    'text_dropdown-header_collapsed': !expanded,
   })}
   >
     {text}

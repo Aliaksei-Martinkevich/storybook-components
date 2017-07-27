@@ -6,8 +6,8 @@ import './RegularHeader.scss';
 
 const RegularHeader = ({ text, className, expanded }) => (
   <div className={classNames('dropdown-regular-header', className, {
-    expanded,
-    collapsed: !expanded,
+    'dropdown-regular-header_expanded': expanded,
+    'dropdown-regular-header_collapsed': !expanded,
   })}
   >
     {text}

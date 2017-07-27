@@ -11,8 +11,8 @@ const DropdownButton = ({ text, className, theme, expanded }) =>
     text={text}
     theme={theme}
     className={classNames('button_dropdown-header', className, {
-      expanded,
-      collapsed: !expanded,
+      'button_dropdown-header_expanded': expanded,
+      'button_dropdown-header_collapsed': !expanded,
     })}
   />);
 
