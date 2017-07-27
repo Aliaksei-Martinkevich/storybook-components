@@ -23,7 +23,7 @@ const Button = ({ text, onClick, disabled, processing, iconUri, className, theme
     disabled={disabled || processing}
     title={text}
   >
-    <ButtonContent iconUri={processing ? iconUri : undefined} text={text} />
+    <ButtonContent iconUri={processing && iconUri} text={text} />
   </button>
   );
 

@@ -2,7 +2,7 @@
 
 exports[`Content Children should be clickable 1`] = `
 <div
-  className="dropdown-content class-name-example collapsed"
+  className="dropdown-content class-name-example dropdown-content_collapsed"
 >
   <div
     className="dropdown-content__item"
@@ -33,12 +33,12 @@ exports[`Content Children should be clickable 1`] = `
 
 exports[`Content Should be collapsed 1`] = `
 <div
-  className="dropdown-content class-name-example collapsed"
+  className="dropdown-content class-name-example dropdown-content_collapsed"
 />
 `;
 
 exports[`Content Should be expanded 1`] = `
 <div
-  className="dropdown-content class-name-example expanded"
+  className="dropdown-content class-name-example dropdown-content_expanded"
 />
 `;

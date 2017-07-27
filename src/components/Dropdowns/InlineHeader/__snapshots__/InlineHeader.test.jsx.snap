@@ -2,7 +2,7 @@
 
 exports[`Inline header Should be collapsed 1`] = `
 <span
-  className="text_dropdown-header class-name-example collapsed"
+  className="text_dropdown-header class-name-example text_dropdown-header_collapsed"
 >
   Some text
 </span>
@@ -10,7 +10,7 @@ exports[`Inline header Should be collapsed 1`] = `
 
 exports[`Inline header Should be expanded 1`] = `
 <span
-  className="text_dropdown-header class-name-example expanded"
+  className="text_dropdown-header class-name-example text_dropdown-header_expanded"
 >
   Some text
 </span>

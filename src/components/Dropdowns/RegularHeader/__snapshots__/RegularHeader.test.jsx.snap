@@ -2,7 +2,7 @@
 
 exports[`Regular header Should be collapsed 1`] = `
 <div
-  className="dropdown-regular-header class-name-example collapsed"
+  className="dropdown-regular-header class-name-example dropdown-regular-header_collapsed"
 >
   Some text
 </div>
@@ -10,7 +10,7 @@ exports[`Regular header Should be collapsed 1`] = `
 
 exports[`Regular header Should be expanded 1`] = `
 <div
-  className="dropdown-regular-header class-name-example expanded"
+  className="dropdown-regular-header class-name-example dropdown-regular-header_expanded"
 >
   Some text
 </div>

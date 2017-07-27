@@ -2,7 +2,7 @@
 
 exports[`Button header Should be collapsed 1`] = `
 <button
-  className="button button_theme-default button_dropdown-header class-name-example collapsed"
+  className="button button_theme-default button_dropdown-header class-name-example button_dropdown-header_collapsed"
   disabled={false}
   onClick={undefined}
   title="Some text"
@@ -21,7 +21,7 @@ exports[`Button header Should be collapsed 1`] = `
 
 exports[`Button header Should be expanded 1`] = `
 <button
-  className="button button_theme-primary button_dropdown-header class-name-example expanded"
+  className="button button_theme-primary button_dropdown-header class-name-example button_dropdown-header_expanded"
   disabled={false}
   onClick={undefined}
   title="Some text"

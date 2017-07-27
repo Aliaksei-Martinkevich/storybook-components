@@ -11,9 +11,9 @@ const RegularItem = ({ onClick, text, className, remark, iconUri }) => (
     className={classNames('dropdown-regular-item', className)}
     title={text}
   >
-    {iconUri ? <img className="dropdown-regular-item__icon" src={iconUri} alt="" /> : ''}
+    {iconUri && <img className="dropdown-regular-item__icon" src={iconUri} alt="" />}
     <span>{text}</span>
-    { remark ? <Remark className="dropdown-regular-item__remark" text={remark} /> : '' }
+    {remark && <Remark className="dropdown-regular-item__remark" text={remark} />}
   </div>
   );
 
