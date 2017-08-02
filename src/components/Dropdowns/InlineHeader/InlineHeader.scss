@@ -1,10 +1,11 @@
 .text_dropdown-header {
+    text-decoration: underline;
     text-decoration-line: underline;
     text-decoration-style: dotted;
     &:hover {
-        text-decoration-line: unset;
+        text-decoration: unset;
     }
     &_expanded {
-        text-decoration-line: unset;
+        text-decoration: unset;
     }
 }

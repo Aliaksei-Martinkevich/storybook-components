@@ -6,6 +6,8 @@ const postcssFlexbugsFixes = require('postcss-flexbugs-fixes');
 const baseConfig = require('./webpack.config.base');
 const merge = require('webpack-merge');
 
+process.env.NODE_ENV = 'production';
+
 module.exports = merge(baseConfig, {
 
   entry: [
@@ -21,7 +23,7 @@ module.exports = merge(baseConfig, {
     chunkFilename: 'static/js/[name].chunk.js',
     publicPath: '/',
     devtoolModuleFilenameTemplate: info =>
-            path.resolve(info.absoluteResourcePath).replace(/\\/g, '/'),
+      path.resolve(info.absoluteResourcePath).replace(/\\/g, '/'),
   },
 
   module: {
@@ -43,32 +45,32 @@ module.exports = merge(baseConfig, {
     {
       test: /\.css$/,
       use: [
-        require.resolve('style-loader'),
-        {
-          loader: require.resolve('css-loader'),
-          options: {
-            importLoaders: 1,
+          require.resolve('style-loader'),
+          {
+            loader: require.resolve('css-loader'),
+            options: {
+              importLoaders: 1,
+            },
           },
-        },
-        {
-          loader: require.resolve('postcss-loader'),
-          options: {
-            ident: 'postcss',
-            plugins: () => [
-              postcssFlexbugsFixes,
-              autoprefixer({
-                browsers: [
-                  '>1%',
-                  'last 4 versions',
-                  'Firefox ESR',
-                  'not ie < 9',
-                ],
-                flexbox: 'no-2009',
-              }),
-            ],
+          {
+            loader: require.resolve('postcss-loader'),
+            options: {
+              ident: 'postcss',
+              plugins: () => [
+                postcssFlexbugsFixes,
+                autoprefixer({
+                  browsers: [
+                    '>1%',
+                    'last 4 versions',
+                    'Firefox ESR',
+                    'not ie < 9',
+                  ],
+                  flexbox: 'no-2009',
+                }),
+              ],
+            },
           },
-        },
-      ],
+        ],
     },
     ],
   },
